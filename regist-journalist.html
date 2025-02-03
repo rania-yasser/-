@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="description" content="منصة صحفي" />
+
+	<title> منصة صحفي </title>
+	<!-- favicons Icons -->
+	<link rel="icon" type="image/png" sizes="32x32" href="assets/images/logo/logo.png" />
+
+	<link rel="stylesheet" href="assets/vendors/bootstrap/bootstrap.min.css" />
+	<link rel="stylesheet" href="assets/vendors/animate/animate.min.css" />
+	<link rel="stylesheet" href="assets/vendors/animate/custom-animate.css" />
+	<link rel="stylesheet" href="assets/vendors/fontawesome/css/all.min.css" />
+	<link rel="stylesheet" href="assets/vendors/swiper/swiper.min.css" />
+	<link rel="stylesheet" href="assets/vendors/owl-carousel/owl.carousel.min.css" />
+	<link rel="stylesheet" href="assets/vendors/owl-carousel/owl.theme.default.min.css" />
+	<link rel="stylesheet" href="assets/vendors/notech-icons/style.css">
+	<!-- steps -->
+	<link rel="stylesheet" href="assets/css/steps.css">
+	<!-- select -->
+	<!-- <link rel="stylesheet" href="assets/vendors/nice-select/nice-select.css"> -->
+	<link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+
+	<!-- video popup -->
+	<link rel="stylesheet" href="assets/vendors/jquery-magnific-popup/jquery.magnific-popup.css" />
+	<!-- counter -->
+	<link rel="stylesheet" href="assets/vendors/odometer/odometer.min.css" />
+	<!-- template styles -->
+	<link rel="stylesheet" href="assets/css/style-rtl.css" />
+	<link rel="stylesheet" href="assets/css/style-responsive-rtl.css" />
+	<link rel="stylesheet" href="assets/css/style-rtl-custom.css" />
+
+</head>
+
+<body>
+	<!-- preloader -->
+	<div class="preloader">
+		<img class="preloader__image" width="120" src="assets/images/logo/logo.png" alt="" />
+	</div>
+
+	<div class="page-wrapper">
+		<!-- header -->
+		<header class="main-header main-header--one clearfix">
+			<div class="main-header__top">
+				<div class="main-header__top-inner clearfix">
+					<div class="main-header__top-left">
+						<ul class="list-unstyled main-header__top-right-menu">
+							<li><a href="login.html">تسجيل الدخول</a></li>
+							<li><a href="regist-journalist.html">تسجيل كصحفي</a></li>
+						</ul>
+					</div>
+					<div class="main-header__top-right">
+						<div class="main-header__top-right-content">
+							<div class="main-header__top-right-social">
+								<a href="#"><i class="fab fa-twitter"></i></a>
+								<a href="#"><i class="fab fa-facebook"></i></a>
+								<a href="#"><i class="fab fa-instagram"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<nav class="main-menu clearfix">
+				<div class="main-menu__wrapper clearfix">
+
+					<div class="main-menu__left main-menu__left--two">
+						<div class="main-menu__logo">
+							<a href="index.html">
+								<img class="logo-dark" src="assets/images/logo/logo.png" alt="">
+							</a>
+						</div>
+						<div class="main-menu__main-menu-box main-menu__main-menu-box--two">
+							<a href="#" class="mobile-nav__toggler"><i class="fa fa-bars"></i></a>
+							<ul class="main-menu__list">
+								<li><a href="index.html">الرئيسية</a></li>
+								<li><a href="about.html">من نحن</a></li>
+								<li><a href="services.html">خدماتنا</a></li>
+								<li><a href="projects.html">الصحفيين</a></li>
+								<li><a href="blog.html">المقالات</a></li>
+								<li><a href="contact.html">تواصل معنا</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="main-menu__right">
+						<div class="main-menu__search-call">
+							<div class="main-menu__search-box">
+								<a href="#" class="main-menu__search search-toggler icon-magnifying-glass"></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</nav>
+		</header>
+
+		<!-- stricky-header -->
+		<div class="stricky-header stricked-menu main-menu">
+			<div class="sticky-header__content"></div>
+		</div>
+
+		<!-- login -->
+		<section class="login wizard-section  padding_section">
+			<div class="container">
+				<div class="row m-0 justify-content-center form_box">
+					<div class="col-md-10">
+						<div class="section-title text-center mb-3">
+							<div class="section-title__tagline-box">
+								<span class="section-title__tagline">منصه صحفي</span>
+								<div class="section-title-shape">
+									<img src="assets/images/shapes/section-title-shape.png" alt="">
+								</div>
+							</div>
+							<h2 class="section-title__title">تسجيل كصحفي</h2>
+						</div>
+						<form action="">
+							<div class="row form-wizard">
+								<div class="col-12">
+									<div class="form-wizard-header text-center">
+										<ul class="list-unstyled form-wizard-steps clearfix">
+											<li class="active"><span>1</span></li>
+											<li><span>2</span></li>
+											<li><span>3</span></li>
+										</ul>
+									</div>
+								</div>
+								<div class="col-md-12">
+									<fieldset class="wizard-fieldset show">
+										<div class="row m-0">
+											<div class="col-sm-4">
+												<div class="comment-form__input-box">
+													<label for="">تحميل صورة</label>
+													<div class="avatar-upload mx-auto">
+														<div class="avatar-edit">
+															<input type='file' id="imageUpload"
+																accept=".png, .jpg, .jpeg" />
+															<label for="imageUpload" title="Edit">تحميل صورة</label>
+														</div>
+														<div class="avatar-preview">
+															<div id="imagePreview"
+																style="background-image: url(assets/images/team/team-1-2.jpg);">
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-sm-8 row m-0 p-0">
+												<div class="col-12">
+													<div class="comment-form__input-box">
+														<label for="name"> الاسم كما يظهر في الهوية
+															<span>*</span></label>
+														<input class="wizard-required" type="text" id="name"
+															name="name">
+														<div class="wizard-form-error"></div>
+													</div>
+												</div>
+												<div class="col-md-6">
+													<div class="comment-form__input-box">
+														<label for="phone"> رقم الجوال <span>*</span></label>
+														<input class="wizard-required" type="text" id="phone"
+															name="phone">
+														<div class="wizard-form-error"></div>
+													</div>
+												</div>
+												<div class="col-md-6">
+													<div class="comment-form__input-box">
+														<label for="email">البريد الالكتروني <span>*</span></label>
+														<input class="wizard-required" type="email" id="email"
+															name="email">
+														<div class="wizard-form-error"></div>
+													</div>
+												</div>
+												<div class="col-md-6">
+													<div class="comment-form__input-box">
+														<label for="start"> رقم التسجيل الاعلامي <span>*</span></label>
+														<input class="wizard-required" type="text" id="start"
+															name="start">
+														<div class="wizard-form-error"></div>
+													</div>
+												</div>
+												<div class="col-md-6">
+													<div class="comment-form__input-box">
+														<label for="end"> تاريخ انتهاء التسجيل الاعلامي
+															<span>*</span></label>
+														<input class="wizard-required" type="date" id="start"
+															name="end">
+														<div class="wizard-form-error"></div>
+													</div>
+												</div>
+												<div class="col-12 comment-form__input-box">
+													<label for="end">المهنة أو الدور الصحفي</label>
+													<select class="jop_select wide" name="" id="">
+														<option value="">--</option>
+														<option value="">مدير تحرير</option>
+														<option value="">كاتب</option>
+														<option value="">مساعد محرر</option>
+														<option value="">صحافي</option>
+														<option value="">مقدم فعاليات ومؤتمرات</option>
+														<option value="">مدير حوار</option>
+														<option value="">مستشار</option>
+														<option value="">كاتب محتوى إبداعي</option>
+														<option value="">محرر صحفي</option>
+														<option value="">مدقق لغوي</option>
+														<option value="">كاتب سيناريو</option>
+														<option value="">كاتب خطابات وكلمات</option>
+														<option value="">كاتب عمود</option>
+														<option value="">محرر صور</option>
+														<option value="">مدير تحرير رقمي</option>
+														<option value="">محرر أخبار عاجلة</option>
+														<option value="">صحفي استقصائي</option>
+														<option value="">محرر ثقافي أو فني</option>
+														<option value="">محرر فيديو</option>
+														<option value="">محرر رياضي</option>
+														<option value="">كاتب تقارير طويلة وتحليلات</option>
+														<option value="">مستشار تحريري</option>
+														<option value="">مراسل متخصص (بيئي، صحي، قضائي، اقتصادي)
+														</option>
+														<option value="">مدير إنتاج صحفي</option>
+														<option value="">محقق صحفي</option>
+														<option value="">باحث صحفي</option>
+														<option value="">كاتب تحقيقات معمقة</option>
+														<option value="">أخري</option>
+													</select>
+												</div>
+											</div>
+											
+											<div class="col-12 mt-4 clearfix text-start">
+												<a href="javascript:;"
+													class="form-wizard-next-btn thm-btn comment-form__btn">التالي</a>
+											</div>
+										</div>
+									</fieldset>
+									<fieldset class="wizard-fieldset">
+										<div class="row m-0">
+											<div class="col-12 comment-form__input-box">
+												<label for="end"> اختيار الخدمات المقدمة</label>
+												<select class="services_select wide" multiple="multiple">
+													<option value="">كتابة</option>
+													<option value="">تحرير</option>
+													<option value="">استشارات إعلامية</option>
+													<option value="">محتوي رقمي</option>
+													<option value="">مراجعة لغوية</option>
+												</select>
+												<small class="attention">ملحوظه : يمكنك إختيار أكثر من خدمة بحد أدني
+													خدمة واحدة</small>
+											</div>
+											<div class="col-12">
+												<div class="position-relative">
+													<h5 class="mb-3 mt-4"> روابط الاعمال</h5>
+													<a href="javascript:;" class="add_link thm-btn">إضافة رابط</a>
+												</div>
+												<div id="new_link">
+													<div class="row">
+														<div class="col-md-6 comment-form__input-box">
+															<label for="link"> الرابط </label>
+															<input type="text" id="link" name="link" placeholder="#">
+														</div>
+														<div class="col-md-6 comment-form__input-box">
+															<label>صورة الرابط</label>
+															<div class='file-input'>
+																<input type='file' name="image">
+																<span class='button'>إختر </span>
+																<label class='label' data-js-label>لا يوجد ملفات</label>
+															</div>
+														</div>
+													</div>
+												</div>
+
+											</div>
+											<div class="col-12 mt-4 clearfix text-start">
+												<a href="javascript:;"
+													class="form-wizard-previous-btn thm-btn">السابق</a>
+												<a href="javascript:;" class="form-wizard-next-btn thm-btn ">التالي</a>
+											</div>
+										</div>
+
+									</fieldset>
+									<fieldset class="wizard-fieldset">
+										<div class="row m-0">
+											<h5 class="mb-3 mt-2"> وسائل التواصل</h5>
+											<div class="col-md-6">
+												<div class="comment-form__input-box">
+													<label for="whatapp"> واتساب</label>
+													<input type="text" id="whatapp" name="whatapp">
+												</div>
+											</div>
+											<div class="col-md-6">
+												<div class="comment-form__input-box">
+													<label for="e-mail"> بريد إلكتروني</label>
+													<input type="email" id="e-mail" name="e-mail">
+												</div>
+											</div>
+											<div class="col-md-6">
+												<div class="comment-form__input-box">
+													<label for="linkedin">لينكدان </label>
+													<input type="text" id="linkedin" name="linkedin">
+												</div>
+											</div>
+											<div class="col-md-6">
+												<div class="comment-form__input-box">
+													<label for="twitter">توتير </label>
+													<input type="text" id="twitter" name="twitter">
+												</div>
+											</div>
+											<div class="col-12 mt-4 clearfix text-start">
+												<a href="javascript:;" class="form-wizard-previous-btn thm-btn">السابق</a>
+												<a href="javascript:;" data-bs-toggle="modal" data-bs-target="#thanks_popup"
+													class="form-wizard-submit thm-btn">إرسال</a>
+											</div>
+										</div>
+									</fieldset>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Modal success -->
+		<div class="modal fade" id="thanks_popup" tabindex="-1" role="dialog" aria-labelledby="thanks_popupLabel"
+			aria-hidden="true">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-body message_content">
+						<a type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</a>
+						<div class="col-12 text-center modal_thanks">
+							<i class="fas fa-check-circle"></i>
+							<h3 class="text-center mb-4">شكرا على التسجيل كصحفي.</h3>
+							<p> تم إضافة بياناتك الشخصية والاعمال الخاصة بك في الحساب الشخصي الخاص بك علي منصة صحفي 
+							</p>
+							<div class="col-12 text-center mb-3 mt-4">
+								<a href="account.html" class="thm-btn">الذهاب الي الحساب الشخصي</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--Site Footer Start-->
+		<footer class="site-footer">
+			<div class="site-footer-bg-1 wow slideInLeft" data-wow-delay="100ms" data-wow-duration="2500ms"
+				style="background-image: url(assets/images/shapes/site-footer-shape-1.png);">
+			</div>
+			<div class="site-footer-bg-2 wow slideInRight" data-wow-delay="100ms" data-wow-duration="2500ms"
+				style="background-image: url(assets/images/shapes/site-footer-shape-2.png);">
+			</div>
+			<div class="site-footer__top">
+				<div class="container">
+					<div class="site-footer__top-inner">
+						<div class="site-footer__top-left">
+							<div class="site-footer__top-icon">
+								<img src="assets/images/icon/paper.png" alt="">
+							</div>
+							<h3 class="site-footer__top-title">إشترك معنا الان وسجل واعرض خدماتك</h3>
+						</div>
+						<div class="site-footer__top-right">
+							<a href="#" class="thm-btn site-footer__btn">تسجيل</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="site-footer__middle">
+				<div class="container">
+					<div class="row">
+						<div class="col-xl-4 col-lg-6 col-md-6 text-center wow fadeInUp" data-wow-delay="100ms">
+							<div class="footer-widget__column footer-widget__about">
+								<div class="footer-widget__logo">
+									<a href="index.html"><img src="assets/images/logo/logo-wh.png" height="150px"
+											alt=""></a>
+								</div>
+							</div>
+						</div>
+						<div class="col-xl-2 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="200ms">
+							<div class="footer-widget__column footer-widget__links clearfix">
+								<h3 class="footer-widget__title">روابط تهمك</h3>
+								<ul class="footer-widget__links-list list-unstyled clearfix">
+									<li><a href="about.html">من نحن</a></li>
+									<li><a href="faq.html">أسئلة شائعة</a></li>
+									<li><a href="services.html">الخدمات</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="300ms">
+							<div class="footer-widget__column footer-widget__contact clearfix">
+								<h3 class="footer-widget__title">Contact</h3>
+								<ul class="footer-widget__contact-list list-unstyled clearfix">
+									<li>
+										<div class="icon">
+											<span class="icon-telephone"></span>
+										</div>
+										<div class="text">
+											<p><a href="tel:980009850">+98 (000)-9850</a></p>
+										</div>
+									</li>
+									<li>
+										<div class="icon">
+											<span class="icon-email"></span>
+										</div>
+										<div class="text">
+											<p><a href="mailto:needhelp@company.com">info@gmail.com</a></p>
+										</div>
+									</li>
+									<li>
+										<div class="icon">
+											<span class="icon-pin"></span>
+										</div>
+										<div class="text">
+											<p>السعودية</p>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="400ms">
+							<div class="footer-widget__column footer-widget__social-box clearfix">
+								<div class="site-footer__social mt-5">
+									<a href="#"><i class="fab fa-twitter"></i></a>
+									<a href="#"><i class="fab fa-facebook"></i></a>
+									<a href="#"><i class="fab fa-pinterest-p"></i></a>
+									<a href="#"><i class="fab fa-instagram"></i></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="site-footer__bottom">
+				<div class="container">
+					<div class="row">
+						<div class="col-xl-12">
+							<div class="site-footer__bottom-inner">
+								<p class="site-footer__bottom-text">حقوق الطبع والنشر © 2025</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<!-- mobile-nav__wrapper -->
+	<div class="mobile-nav__wrapper">
+		<div class="mobile-nav__overlay mobile-nav__toggler"></div>
+		<!-- mobile-nav__overlay -->
+		<div class="mobile-nav__content">
+			<span class="mobile-nav__close mobile-nav__toggler"><i class="fa fa-times"></i></span>
+			<div class="logo-box">
+				<a href="index.html" aria-label="logo image"><img src="assets/images/logo/logo.png" height="55"
+						alt="" /></a>
+			</div>
+			<div class="mobile-nav__container"></div>
+			<!-- mobile-nav__contact -->
+			<ul class="mobile-nav__contact list-unstyled">
+				<li>
+					<i class="fa fa-envelope"></i>
+					<a href="mailto:info@gmail.com">info@gmail.com</a>
+				</li>
+			</ul>
+			<!-- mobile-nav__social -->
+			<div class="mobile-nav__top">
+				<div class="mobile-nav__social">
+					<a href="#" class="fab fa-twitter"></a>
+					<a href="#" class="fab fa-facebook-square"></a>
+					<a href="#" class="fab fa-instagram"></a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--  search-popup -->
+	<div class="search-popup">
+		<div class="search-popup__overlay search-toggler"></div>
+		<!-- search-popup__overlay -->
+		<div class="search-popup__content">
+			<form action="#">
+				<label for="search" class="sr-only">إبحث هنا</label>
+				<input type="text" id="search" placeholder="إبحث هنا ..." />
+				<button type="submit" aria-label="search submit" class="thm-btn">
+					<i class="icon-magnifying-glass"></i>
+				</button>
+			</form>
+		</div>
+	</div>
+
+	<!--  Scroll top -->
+	<a href="#" data-target="html" class="scroll-to-target scroll-to-top"><i class="fa fa-angle-up"></i></a>
+
+
+	<script src="assets/vendors/jquery/jquery-3.6.0.min.js"></script>
+	<script src="assets/vendors/bootstrap/bootstrap.bundle.min.js"></script>
+	<script src="assets/vendors/owl-carousel/owl.carousel.min.js"></script>
+	<script src="assets/vendors/swiper/swiper.min.js"></script>
+	<script src="assets/vendors/jquery-appear/jquery.appear.min.js"></script>
+	<script src="assets/vendors/wow/wow.js"></script>
+	<!-- select -->
+	<!-- <script src="assets/vendors/nice-select/jquery.nice-select.min.js"></script> -->
+	<!-- video popup -->
+	<script src="assets/vendors/jquery-magnific-popup/jquery.magnific-popup.min.js"></script>
+	<!-- counter -->
+	<script src="assets/vendors/odometer/odometer.min.js"></script>
+	<!-- form validate-->
+	<script src="assets/vendors/jquery-validate/jquery.validate.min.js"></script>
+	<!-- template js -->
+	<script src="assets/js/custom.js"></script>
+	<!-- change image -->
+	<script>
+		/*  change image  **/
+		function readURL(input) {
+			if (input.files && input.files[0]) {
+				var reader = new FileReader();
+				reader.onload = function (e) {
+					$('#imagePreview').css('background-image', 'url(' + e.target.result + ')');
+					$('#imagePreview').hide();
+					$('#imagePreview').fadeIn(650);
+				}
+				reader.readAsDataURL(input.files[0]);
+			}
+		}
+		$("#imageUpload").change(function () {
+			readURL(this);
+		});
+
+	</script>
+
+	<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+	<script>
+		$(document).ready(function () {
+			$('.jop_select').select2();
+
+			$('.jop_select').one('select2:open', function (e) {
+				$('input.select2-search__field').prop('placeholder', 'بحث  عن المهنة أو الدور الصحفي ');
+			});
+
+			$(".services_select").select2({
+				multiple: true,
+			});
+
+		});
+	</script>
+
+	<!-- form steps -->
+	<script>
+
+		jQuery(document).ready(function () {
+			// click on next button
+			jQuery('.form-wizard-next-btn').click(function () {
+				var parentFieldset = jQuery(this).parents('.wizard-fieldset');
+				var currentActiveStep = jQuery(this).parents('.form-wizard').find('.form-wizard-steps .active');
+				var next = jQuery(this);
+				var nextWizardStep = true;
+				parentFieldset.find('.wizard-required').each(function () {
+					var thisValue = jQuery(this).val();
+
+					if (thisValue == "") {
+						jQuery(this).siblings(".wizard-form-error").slideDown();
+						nextWizardStep = false;
+					} else {
+						jQuery(this).siblings(".wizard-form-error").slideUp();
+					}
+				});
+				if (nextWizardStep) {
+					next.parents('.wizard-fieldset').removeClass("show", "400");
+					currentActiveStep.removeClass('active').addClass('activated').next().addClass('active', "400");
+					next.parents('.wizard-fieldset').next('.wizard-fieldset').addClass("show", "400");
+					jQuery(document).find('.wizard-fieldset').each(function () {
+						if (jQuery(this).hasClass('show')) {
+							var formAtrr = jQuery(this).attr('data-tab-content');
+							jQuery(document).find('.form-wizard-steps .form-wizard-step-item').each(function () {
+								if (jQuery(this).attr('data-attr') == formAtrr) {
+									jQuery(this).addClass('active');
+									var innerWidth = jQuery(this).innerWidth();
+									var position = jQuery(this).position();
+									jQuery(document).find('.form-wizard-step-move').css({
+										"left": position.left,
+										"width": innerWidth
+									});
+								} else {
+									jQuery(this).removeClass('active');
+								}
+							});
+						}
+					});
+				}
+			});
+			//click on previous button
+			jQuery('.form-wizard-previous-btn').click(function () {
+				var counter = parseInt(jQuery(".wizard-counter").text());;
+				var prev = jQuery(this);
+				var currentActiveStep = jQuery(this).parents('.form-wizard').find('.form-wizard-steps .active');
+				prev.parents('.wizard-fieldset').removeClass("show", "400");
+				prev.parents('.wizard-fieldset').prev('.wizard-fieldset').addClass("show", "400");
+				currentActiveStep.removeClass('active').prev().removeClass('activated').addClass('active', "400");
+				jQuery(document).find('.wizard-fieldset').each(function () {
+					if (jQuery(this).hasClass('show')) {
+						var formAtrr = jQuery(this).attr('data-tab-content');
+						jQuery(document).find('.form-wizard-steps .form-wizard-step-item').each(function () {
+							if (jQuery(this).attr('data-attr') == formAtrr) {
+								jQuery(this).addClass('active');
+								var innerWidth = jQuery(this).innerWidth();
+								var position = jQuery(this).position();
+								jQuery(document).find('.form-wizard-step-move').css({
+									"left": position.left,
+									"width": innerWidth
+								});
+							} else {
+								jQuery(this).removeClass('active');
+							}
+						});
+					}
+				});
+			});
+			//click on form submit button
+			jQuery(document).on("click", ".form-wizard .form-wizard-submit", function () {
+				var parentFieldset = jQuery(this).parents('.wizard-fieldset');
+				var currentActiveStep = jQuery(this).parents('.form-wizard').find('.form-wizard-steps .active');
+				parentFieldset.find('.wizard-required').each(function () {
+					var thisValue = jQuery(this).val();
+					if (thisValue == "") {
+						jQuery(this).siblings(".wizard-form-error").slideDown();
+					} else {
+						jQuery(this).siblings(".wizard-form-error").slideUp();
+					}
+				});
+			});
+			// focus on input field check empty or not
+			jQuery(".form-control").on('focus', function () {
+				var tmpThis = jQuery(this).val();
+				if (tmpThis == '') {
+					jQuery(this).parent().addClass("focus-input");
+				} else if (tmpThis != '') {
+					jQuery(this).parent().addClass("focus-input");
+				}
+			}).on('blur', function () {
+				var tmpThis = jQuery(this).val();
+				if (tmpThis == '') {
+					jQuery(this).parent().removeClass("focus-input");
+					jQuery(this).siblings('.wizard-form-error').slideDown("3000");
+				} else if (tmpThis != '') {
+					jQuery(this).parent().addClass("focus-input");
+					jQuery(this).siblings('.wizard-form-error').slideUp("3000");
+				}
+			});
+		});
+		$(".form-wizard-next-btn , .form-wizard-previous-btn").click(function () {
+			$("html, body").animate({ scrollTop: "200px" }, "slow");
+			return false;
+		});
+
+	</script>
+
+	<!-- add new link -->
+	<script>
+		$(".add_link").click(function () {
+			$("#new_link").append('<div class="row"><div class="col-md-6 comment-form__input-box"><label for="link"> الرابط </label><input type="text" id="link" name="link" placeholder="#"></div><div class="col-md-6 comment-form__input-box"><label>صورة الرابط</label><div class="file-input"><input type="file" name="image"><span class="button">إختر </span><label class="label" data-js-label>لا يوجد ملفات</label></div></div></div>');
+		});
+	</script>
+
+	<!-- file input -->
+	<script>
+		var inputs = document.querySelectorAll('.file-input')
+
+		for (var i = 0, len = inputs.length; i < len; i++) {
+			customInput(inputs[i])
+		}
+
+		function customInput(el) {
+			const fileInput = el.querySelector('[type="file"]')
+			const label = el.querySelector('[data-js-label]')
+
+			fileInput.onchange =
+				fileInput.onmouseout = function () {
+					if (!fileInput.value) return
+
+					var value = fileInput.value.replace(/^.*[\\\/]/, '')
+					el.className += ' -chosen'
+					label.innerText = value
+				}
+		}
+	</script>
+
+
+
+</body>
+
+</html>

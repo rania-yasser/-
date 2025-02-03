@@ -1,0 +1,333 @@
+body {
+  overflow-x: hidden;
+}
+
+.list-unstyled {
+  padding-right: 0;
+}
+
+.owl-carousel {
+  direction: ltr;
+}
+
+.owl-carousel .owl-item {
+  direction: rtl;
+}
+.odometer.odometer-auto-theme {
+  direction: ltr;
+}
+
+/* login */
+.padding_section {
+  padding: 70px 0;
+}
+
+.login {
+  background-color: var(--main-extra);
+}
+.login .form_box {
+  padding: 50px 0;
+  background-color: #fff;
+}
+#email-error {
+  color: red;
+  font-size: 14px;
+}
+
+.form_login p {
+  font-size: 14px;
+  text-align: center;
+}
+.form_login a {
+  color: var(--main-base);
+  font-weight: bold;
+}
+.attention {
+  color: red;
+  font-size: 13px;
+}
+/* change image */
+.avatar-upload {
+  position: relative;
+  border: 2px solid var(--main-extra);
+}
+.avatar-upload .avatar-edit {
+  position: absolute;
+  z-index: 1;
+  bottom: -40px;
+  right: 0;
+  left: 0;
+  background-color: var(--main-base);
+  transition: 0.5s;
+}
+.avatar-upload .avatar-edit input {
+  display: none;
+}
+.avatar-upload .avatar-edit input + label {
+  width: 100%;
+  height: 40px;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.12);
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.avatar-upload .avatar-edit:hover {
+  background: var(--main-primary);
+}
+
+.avatar-upload .avatar-preview {
+  width: 100%;
+  height: 250px;
+  position: relative;
+  padding: 4px;
+}
+.avatar-upload .avatar-preview > div {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* select 2 */
+.select2-container {
+  width: 100% !important;
+}
+.select2-container .selection .select2-selection--single {
+  width: 100%;
+  height: 50px;
+  border: none;
+  background-color: var(--main-extra);
+  padding-right: 15px;
+  padding-left: 15px;
+  outline: none;
+  font-size: 14px;
+  color: var(--main-gray);
+  display: block;
+}
+.select2-container .select2-selection__rendered {
+  height: 100%;
+  display: flex !important;
+  align-items: center;
+}
+.select2-container--default
+  .select2-selection--single
+  .select2-selection__arrow {
+  height: 100% !important;
+  left: 10px !important;
+}
+.select2-container--open .select2-dropdown {
+  border: 1px solid #eee !important;
+  background-color: #e2e2e2 !important;
+}
+.select2-container--default .select2-search--dropdown .select2-search__field {
+  border: 1px solid #e2e2e2 !important;
+  box-shadow: none !important;
+  outline: none !important;
+  font-size: 14px !important;
+  color: var(--main-gray) !important;
+}
+.select2-container--default
+  .select2-search--dropdown
+  .select2-search__field::placeholder {
+  color: #ddd;
+  font-size: 14px;
+}
+.select2-results__option {
+  padding: 3px 6px !important;
+  font-size: 15px !important;
+}
+.select2-container--default
+  .select2-results__option--highlighted.select2-results__option--selectable {
+  background-color: var(--main-base) !important;
+}
+.select2-container--default .select2-selection--multiple {
+  width: 100%;
+  border: none !important;
+  background-color: var(--main-extra) !important;
+  padding-right: 15px;
+  padding-left: 15px;
+  outline: none;
+  font-size: 14px;
+  color: var(--main-gray);
+  display: block;
+  min-height: 50px;
+  border-radius: 0;
+}
+.select2-container--default[dir="rtl"]
+  .select2-selection--multiple
+  .select2-selection__choice {
+  margin-right: 5px;
+  margin-left: 0;
+}
+.select2-selection--multiple .select2-selection__choice {
+  min-width: 110px;
+  padding: 3px 8px 3px 28px !important;
+  border: 0px solid #ddd !important;
+  background-color: #fff !important;
+}
+.select2-container--default[dir="rtl"]
+  .select2-selection--multiple
+  .select2-selection__choice__remove {
+  border: 0 !important;
+  height: 100%;
+  left: 6px !important;
+}
+.select2-search.select2-search--inline {
+  display: none !important;
+}
+.select2-container--default
+  .select2-selection--multiple
+  .select2-selection__choice__remove:hover {
+  background-color: transparent;
+}
+/* file input */
+
+.file-input {
+  display: inline-block;
+  position: relative;
+  height: 50px;
+  width: 100%;
+  border: none;
+  background-color: var(--main-extra);
+  padding-right: 15px;
+  padding-left: 15px;
+  outline: none;
+  font-size: 14px;
+  color: var(--main-gray);
+  cursor: pointer;
+}
+
+.file-input > [type="file"] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 10;
+  cursor: pointer;
+}
+
+.file-input > .button {
+  display: inline-block;
+  cursor: pointer;
+  background: var(--main-primary);
+  color: #000;
+  padding: 9px 15px;
+  margin-right: -15px;
+  border: 0;
+  height: 100%;
+  font-size: 16px;
+  margin-left: 10px;
+}
+
+.add_link {
+  position: absolute;
+  left: 0;
+  padding: 2px 20px;
+  top: 0;
+  font-size: 13px;
+}
+
+/* account dashboard */
+.bg_gray {
+  background-color: var(--main-extra);
+  padding: 60px 0;
+}
+.dashboard .profile_avatar {
+  text-align: center;
+}
+.dashboard .profile_avatar img {
+  border-radius: 100%;
+  -moz-border-radius: 100%;
+  -webkit-border-radius: 100%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  margin-bottom: 10px;
+  box-shadow: 0px 0px 0px 2px var(--main-base);
+  padding: 6px;
+  margin-bottom: 20px;
+}
+.dashboard .card {
+  border: 0;
+  /* box-shadow: 0px 0px 0px 1px #eee; */
+}
+.dashboard .profile_name h4 {
+  font-size: 22px;
+  color: var(--main-black);
+  font-weight: bold;
+}
+.dashboard .profile_name span {
+  font-size: 16px;
+  font-weight: normal;
+  display: block;
+  color: var(--main-gray);
+  margin-top: 3px;
+  margin-bottom: 30px;
+}
+.dashboard .menu-col {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-weight: 500;
+  font-size: 16px;
+}
+.dashboard .menu-col li {
+  margin-bottom: 4px;
+}
+.dashboard .menu-col li a {
+  padding: 5px 10px;
+  display: block;
+  color: var(--main-gray);
+  border-radius: 0px;
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  font-size: 16px;
+  transition: 0.5s;
+}
+.dashboard .menu-col li a:hover {
+  background-color: var(--main-base);
+  color: #fff;
+}
+.dashboard .menu-col li a.active {
+  background-color: var(--main-primary);
+  color: #fff;
+}
+.dashboard .menu-col i {
+  margin-right: 0;
+  margin-left: 10px;
+  font-size: 13px;
+}
+.dashboard .menu-col li a.active i {
+  color: #ffffff;
+}
+
+.dashboard .symbol i {
+  color: var(--main-primary);
+  margin-top: 5px;
+  font-size: 30px;
+}
+.title_account {
+  font-size: 19px;
+}
+
+.dashboard .personal_information {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+.dashboard .personal_information li {
+  font-size: 16px;
+}
+.dashboard .personal_information li span {
+  font-size: 16px;
+  color: var(--main-base);
+  min-width: 185px;
+  display: inline-block;
+}
+button.thm-btn {
+  border: 0;
+}
