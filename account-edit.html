@@ -127,6 +127,23 @@
 									<div class="col-12">
 										<h4 class="title_account mb-4"> البيانات الشخصية</h4>
 									</div>
+									<div class="col-12 edit_profile">
+										<div class="comment-form__input-box">
+											<label for="">تغيير صورة</label>
+											<div class="avatar-upload mx-auto">
+												<div class="avatar-edit">
+													<input type='file' id="imageUpload"
+														accept=".png, .jpg, .jpeg" />
+													<label for="imageUpload" title="Edit">تحميل صورة</label>
+												</div>
+												<div class="avatar-preview">
+													<div id="imagePreview"
+														style="background-image: url(assets/images/team/team-1-2.jpg);">
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
 									<div class="col-12">
 										<div class="comment-form__input-box">
 											<label for="name"> الاسم كما يظهر في الهوية</label>
@@ -192,6 +209,12 @@
 											<option value="">كاتب تحقيقات معمقة</option>
 											<option value="">أخري</option>
 										</select>
+									</div>
+									<div class="col-12">
+										<div class="comment-form__input-box">
+											<label for="about"> نبذة مختصرة</label>
+											<textarea id="about" name="about" rows="1"></textarea>
+										</div>
 									</div>
 									<div class="col-12 text-start mt-3">
 										<button type="submit" class="thm-btn">حفظ</button>

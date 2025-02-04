@@ -241,6 +241,10 @@ body {
   background-color: #fff;
   padding: 20px 20px;
 }
+.dashboard .container{
+  background-color: transparent;
+  padding: 0;
+}
 .dashboard .profile_avatar {
   text-align: center;
 }
@@ -393,4 +397,21 @@ button.thm-btn {
 .team-details__top-right .get-to-know__points li .text p{
   color: var(--main-gray) !important;
   font-size: 16px !important;
+}
+
+.edit_profile .avatar-upload .avatar-preview{
+  max-width: 220px;
+  height: 100px;
+}
+.edit_profile .avatar-upload{
+  border: 0;
+}
+.edit_profile .avatar-upload .avatar-edit{
+  position: absolute;
+  width: 100px;
+  bottom: 25px;
+  right: 200px;
+}
+.edit_profile .avatar-upload .avatar-edit input + label{
+  height: 35px;
 }
