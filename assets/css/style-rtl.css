@@ -8901,7 +8901,7 @@ ul {
 .comment-form__input-box textarea {
   font-size: 14px;
   color: var(--main-gray);
-  height: 188px;
+  min-height: 50px;
   width: 100%;
   background-color: var(--main-extra);
   padding: 18px 30px 30px;
