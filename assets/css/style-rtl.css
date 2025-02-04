@@ -5845,6 +5845,8 @@ ul {
   transform: scale(1);
   -webkit-transition: all 500ms ease;
   transition: all 500ms ease;
+  height: 250px;
+  object-fit: cover;
 }
 
 .project-two__single:hover .project-two__img img {
@@ -5855,15 +5857,17 @@ ul {
 .project-two__content {
   position: relative;
   display: block;
-  background-color: var(--main-white);
-  padding-top: 31px;
-  padding-bottom: 37px;
-  padding-right: 50px;
-  margin-right: 25px;
-  margin-left: 25px;
-  margin-top: -95px;
+  background-color: var(--main-extra);
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -54px;
   overflow: hidden;
   z-index: 2;
+  max-width: 84%;
+  padding: 10px 17px;
+  min-height: 80px;
+  display: flex;
+  align-items: center;
 }
 
 .project-two__content:after {
@@ -5908,6 +5912,7 @@ ul {
   color: var(--main-black);
   -webkit-transition: all 500ms ease;
   transition: all 500ms ease;
+  font-size: 18px;
 }
 
 .project-two__single:hover .project-two__title a {

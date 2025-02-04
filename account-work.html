@@ -115,11 +115,13 @@
 							</div>
 							<ul class="menu-col">
 								<li><a href="account.html"><i class="fa fa-home"></i>لوحة التحكم</a></li>
-								<li><a href="account-edit.html" class="active"><i class="fas fa-users"></i>البيانات الشخصية</a></li>
+								<li><a href="account-edit.html"><i class="fas fa-users"></i>البيانات الشخصية</a></li>
 								<li><a href="account-contact.html"><i class="fas fa-list-ul"></i>بيانات التواصل</a></li>
-								<li><a href="account-work.html"><i class="fas fa-project-diagram"></i> سابقة الاعمال
+								<li><a href="account-work.html" class="active"><i class="fas fa-project-diagram"></i>
+										سابقة الاعمال
 									</a></li>
-							    <li><a href="account-services.html"><i class="fas fa-list-alt"></i>  الخدمات المقدمة</a></li>
+								<li><a href="account-services.html"><i class="fas fa-list-alt"></i> الخدمات المقدمة</a>
+								</li>
 								<li><a href="login.html"><i class="fas fa-sign-out-alt"></i>تسجيل الخروج</a></li>
 							</ul>
 						</div>
@@ -128,76 +130,76 @@
 					<div class="col-lg-9">
 						<div class="card p-4 rounded-5 mb25">
 							<form action="">
-								<div class="row m-0">
+								<div class="row">
 									<div class="col-12">
-										<h4 class="title_account mb-4"> البيانات الشخصية</h4>
+										<h4 class="title_account mb-4"> سابقة الاعمال</h4>
 									</div>
-									<div class="col-12">
-										<div class="comment-form__input-box">
-											<label for="name"> الاسم كما يظهر في الهوية</label>
-											<input type="text" id="name" name="name" value="أحمد محمد">
+									<div class="col-lg-4 col-md-6 col-12 mb-5">
+										<div class="project-two__single">
+											<div class="project-two__img">
+												<img src="assets/images/home/about1.jpg" alt="">
+											</div>
+											<div class="project-two__content">
+												<h3 class="project-two__title"><a href="#">جريدة الحياة</a>
+												</h3>
+												<div class="project-two__arrow">
+													<a href="#"><i class="fa fa-long-arrow-alt-right"></i></a>
+												</div>
+											</div>
+											<a href="" class="edit_work" data-bs-toggle="modal"
+												data-bs-target="#edit_popup">تعديل</a>
 										</div>
 									</div>
-									<div class="col-md-6">
-										<div class="comment-form__input-box">
-											<label for="phone"> رقم الجوال</label>
-											<input type="text" id="phone" name="phone" value="0110000000">
+									<div class="col-lg-4 col-md-6 col-12 mb-5">
+										<div class="project-two__single">
+											<div class="project-two__img">
+												<img src="assets/images/home/about1.jpg" alt="">
+											</div>
+											<div class="project-two__content">
+												<h3 class="project-two__title"><a href="#">جريدة الحياة</a>
+												</h3>
+												<div class="project-two__arrow">
+													<a href="#"><i class="fa fa-long-arrow-alt-right"></i></a>
+												</div>
+											</div>
+											<a href="" class="edit_work" data-bs-toggle="modal"
+												data-bs-target="#edit_popup">تعديل</a>
 										</div>
 									</div>
-									<div class="col-md-6">
-										<div class="comment-form__input-box">
-											<label for="email">البريد الالكتروني</label>
-											<input type="email" id="email" name="email" placeholder="info@mail.com">
+									<div class="col-lg-4 col-md-6 col-12 mb-5">
+										<div class="project-two__single">
+											<div class="project-two__img">
+												<img src="assets/images/home/about1.jpg" alt="">
+											</div>
+											<div class="project-two__content">
+												<h3 class="project-two__title"><a href="#">جريدة الحياة</a>
+												</h3>
+												<div class="project-two__arrow">
+													<a href="#"><i class="fa fa-long-arrow-alt-right"></i></a>
+												</div>
+											</div>
+											<a href="" class="edit_work" data-bs-toggle="modal"
+												data-bs-target="#edit_popup">تعديل</a>
 										</div>
 									</div>
-									<div class="col-md-6">
-										<div class="comment-form__input-box">
-											<label for="start"> رقم التسجيل الاعلامي <span>*</span></label>
-											<input type="text" id="start" name="start" value="65468515">
+									<div class="col-lg-4 col-md-6 col-12 mb-5">
+										<div class="project-two__single">
+											<div class="project-two__img">
+												<img src="assets/images/home/about1.jpg" alt="">
+											</div>
+											<div class="project-two__content">
+												<h3 class="project-two__title"><a href="#">جريدة الحياة</a>
+												</h3>
+												<div class="project-two__arrow">
+													<a href="#"><i class="fa fa-long-arrow-alt-right"></i></a>
+												</div>
+											</div>
+											<a href="" class="edit_work" data-bs-toggle="modal"
+												data-bs-target="#edit_popup">تعديل</a>
 										</div>
 									</div>
-									<div class="col-md-6">
-										<div class="comment-form__input-box">
-											<label for="end"> تاريخ انتهاء التسجيل الاعلامي
-												<span>*</span></label>
-											<input type="date" id="start" name="end">
-										</div>
-									</div>
-									<div class="col-12 comment-form__input-box">
-										<label for="end">المهنة أو الدور الصحفي</label>
-										<select class="jop_select wide" name="" id="">
-											<option value="">--</option>
-											<option value="">مدير تحرير</option>
-											<option value="" selected>كاتب</option>
-											<option value="">مساعد محرر</option>
-											<option value="">صحافي</option>
-											<option value="">مقدم فعاليات ومؤتمرات</option>
-											<option value="">مدير حوار</option>
-											<option value="">مستشار</option>
-											<option value="">كاتب محتوى إبداعي</option>
-											<option value="">محرر صحفي</option>
-											<option value="">مدقق لغوي</option>
-											<option value="">كاتب سيناريو</option>
-											<option value="">كاتب خطابات وكلمات</option>
-											<option value="">كاتب عمود</option>
-											<option value="">محرر صور</option>
-											<option value="">مدير تحرير رقمي</option>
-											<option value="">محرر أخبار عاجلة</option>
-											<option value="">صحفي استقصائي</option>
-											<option value="">محرر ثقافي أو فني</option>
-											<option value="">محرر فيديو</option>
-											<option value="">محرر رياضي</option>
-											<option value="">كاتب تقارير طويلة وتحليلات</option>
-											<option value="">مستشار تحريري</option>
-											<option value="">مراسل متخصص (بيئي، صحي، قضائي، اقتصادي)
-											</option>
-											<option value="">مدير إنتاج صحفي</option>
-											<option value="">محقق صحفي</option>
-											<option value="">باحث صحفي</option>
-											<option value="">كاتب تحقيقات معمقة</option>
-											<option value="">أخري</option>
-										</select>
-									</div>
+
+
 									<div class="col-12 text-start mt-3">
 										<button type="submit" class="thm-btn">حفظ</button>
 									</div>
@@ -208,7 +210,46 @@
 				</div>
 			</div>
 		</section>
+		<!-- Modal success -->
+		<div class="modal fade" id="edit_popup" tabindex="-1" role="dialog" aria-labelledby="edit_popupLabel"
+			aria-hidden="true">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-body message_content">
+						<a type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</a>
+						<div class="col-12 ">
+							<h5 class="text-center mb-2 mt-2">تعديل العمل</h5>
+							<form action="">
+								<div class="row">
+									<div class="col-12 comment-form__input-box mb-2">
+										<label for="title"> عنوان العمل </label>
+										<input type="text" id="title" name="title" placeholder="">
+									</div>
+									<div class="col-12 comment-form__input-box mb-2">
+										<label for="link"> الرابط </label>
+										<input type="text" id="link" name="link" placeholder="#">
+									</div>
+									<div class="col-12 comment-form__input-box mb-2">
+										<label>صورة الرابط</label>
+										<div class='file-input'>
+											<input type='file' name="image">
+											<span class='button'>إختر </span>
+											<label class='label' data-js-label>لا يوجد ملفات</label>
+										</div>
+									</div>
+									<div class="col-12 text-start mb-0 mt-3">
+										<a href="account.html" class="thm-btn"> حفظ </a>
+									</div>
+								</div>
+							</form>
 
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 
 		<!--Site Footer Start-->
 		<footer class="site-footer">
@@ -371,20 +412,14 @@
 	<script src="assets/vendors/odometer/odometer.min.js"></script>
 	<!-- form validate-->
 	<script src="assets/vendors/jquery-validate/jquery.validate.min.js"></script>
-	<!-- template js -->
-	<script src="assets/js/custom.js"></script>
 	<!-- select -->
 	<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
-	<script>
-		$(document).ready(function () {
-			$('.jop_select').select2();
 
-			$('.jop_select').one('select2:open', function (e) {
-				$('input.select2-search__field').prop('placeholder', 'بحث  عن المهنة أو الدور الصحفي ');
-			});
+	<!-- template js -->
+	<script src="assets/js/custom.js"></script>
+	<script src="assets/js/regist-cutom.js"></script>
 
-		});
-	</script>
+
 
 </body>
 
