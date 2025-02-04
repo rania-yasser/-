@@ -513,3 +513,9 @@ button.thm-btn {
 .account_dropdown .menu ul li a i {
   color: var(--main-base);
 }
+.add_new_link{
+  float: left;
+  margin-top: -56px;
+  padding: 3px 17px;
+  font-size: 14px;
+}
