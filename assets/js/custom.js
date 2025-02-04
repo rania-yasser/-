@@ -668,9 +668,6 @@
       });
     });
   }
-  // if ($('select:not(.ignore)').length) {
-  //   $('select:not(.ignore)').niceSelect();
-  // }
 
 
 })(jQuery);

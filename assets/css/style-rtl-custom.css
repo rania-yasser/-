@@ -96,7 +96,7 @@ body {
 }
 .select2-container .selection .select2-selection--single {
   width: 100%;
-  height: 50px;
+  height: 45px;
   border: none;
   background-color: var(--main-extra);
   padding-right: 15px;
@@ -105,6 +105,7 @@ body {
   font-size: 14px;
   color: var(--main-gray);
   display: block;
+  border-radius: 0;
 }
 .select2-container .select2-selection__rendered {
   height: 100%;
@@ -131,7 +132,7 @@ body {
 .select2-container--default
   .select2-search--dropdown
   .select2-search__field::placeholder {
-  color: #ddd;
+  color: #aaa;
   font-size: 14px;
 }
 .select2-results__option {
@@ -152,7 +153,7 @@ body {
   font-size: 14px;
   color: var(--main-gray);
   display: block;
-  min-height: 50px;
+  min-height: 45px;
   border-radius: 0;
 }
 .select2-container--default[dir="rtl"]
@@ -187,7 +188,7 @@ body {
 .file-input {
   display: inline-block;
   position: relative;
-  height: 50px;
+  height: 45px;
   width: 100%;
   border: none;
   background-color: var(--main-extra);
@@ -235,6 +236,10 @@ body {
 .bg_gray {
   background-color: var(--main-extra);
   padding: 60px 0;
+}
+.bg_gray .container {
+  background-color: #fff;
+  padding: 20px 20px;
 }
 .dashboard .profile_avatar {
   text-align: center;
@@ -335,7 +340,7 @@ body {
 button.thm-btn {
   border: 0;
 }
-.edit_work{
+.edit_work {
   position: absolute;
   top: 0;
   left: 0;
@@ -345,11 +350,47 @@ button.thm-btn {
   padding: 2px 10px;
   color: #fff !important;
 }
-.modal .close{
+.modal .close {
   position: absolute;
 }
-@media(max-width:992px){
-  .dashboard .personal_information li{
+.add_jornalist {
+  display: unset;
+  font-size: 13px;
+  padding: 10px;
+}
+
+@media (max-width: 992px) {
+  .dashboard .personal_information li {
     width: 100%;
   }
+}
+
+/* filter  */
+.filter .new_text {
+  font-size: 15px;
+  margin-bottom: 15px;
+}
+.filter .comment-form__input-box input,
+.filter .comment-form__input-box select {
+  font-size: 14px;
+  height: 45px;
+  border: 0;
+}
+.filter .thm-btn {
+  padding: 6px;
+  min-width: 150px;
+}
+/* team_social */
+.team_social .text p a {
+  color: var(--main-gray) !important;
+  font-size: 16px !important;
+}
+.team_social .icon span {
+  font-size: 15px !important;
+  position: relative;
+  top: 1px;
+}
+.team-details__top-right .get-to-know__points li .text p{
+  color: var(--main-gray) !important;
+  font-size: 16px !important;
 }

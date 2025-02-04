@@ -212,10 +212,6 @@
         margin-right: 0;
     }
 
-    .team-details__top {
-        padding: 120px 0 109px;
-    }
-
     .pricing__single {
         padding: 60px 30px 60px;
     }
@@ -600,10 +596,6 @@
 
     .team-details__top-right {
         margin-right: 0;
-    }
-
-    .team-details__top {
-        padding: 120px 0 109px;
     }
 
     .team-details__top-content {
@@ -1168,10 +1160,6 @@
 
     .team-details__top-right {
         margin-right: 0;
-    }
-
-    .team-details__top {
-        padding: 120px 0 109px;
     }
 
     .team-details__top-content {
@@ -1973,12 +1961,13 @@
         padding: 0 30px;
     }
 
-    .main-menu__right {
+    /* .main-menu__right {
         display: none;
-    }
+    } */
 
     .main-menu__left {
-        float: none;
+        /* float: none; */
+        width: 50%;
     }
 
     .main-menu__logo {

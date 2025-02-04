@@ -16,14 +16,23 @@ $("#imageUpload").change(function () {
 
 /* select 2 */
 $(document).ready(function () {
+  /* jop_select */
   $('.jop_select').select2();
 
   $('.jop_select').one('select2:open', function (e) {
     $('input.select2-search__field').prop('placeholder', 'بحث  عن المهنة أو الدور الصحفي ');
   });
 
+
+  /* services_select */
   $(".services_select").select2({
     multiple: true,
+  });
+
+  /* select_filte */
+  $('.select_filte').select2();
+  $('.select_filte').one('select2:open', function (e) {
+    $('input.select2-search__field').prop('placeholder', 'بحث  عن المهنة أو الدور الصحفي ');
   });
 
 });

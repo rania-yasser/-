@@ -20,7 +20,6 @@
 	<link rel="stylesheet" href="assets/vendors/notech-icons/style.css">
 	<!-- select -->
 	<link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
-
 	<!-- video popup -->
 	<link rel="stylesheet" href="assets/vendors/jquery-magnific-popup/jquery.magnific-popup.css" />
 	<!-- counter -->
@@ -46,7 +45,7 @@
 					<div class="main-header__top-left">
 						<ul class="list-unstyled main-header__top-right-menu">
 							<li><a href="login.html">تسجيل الدخول</a></li>
-							<li><a href="regist-journalist.html">تسجيل كصحفي</a></li>
+							<li><a href="register.html">تسجيل جديد</a></li>
 						</ul>
 					</div>
 					<div class="main-header__top-right">
@@ -74,19 +73,15 @@
 							<ul class="main-menu__list">
 								<li><a href="index.html">الرئيسية</a></li>
 								<li><a href="about.html">من نحن</a></li>
-								<li><a href="services.html">خدماتنا</a></li>
-								<li><a href="projects.html">الصحفيين</a></li>
+								<li><a href="work-gallery.html">معرض الأعمال</a></li>
+								<li><a href="journalist.html">الصحفيين</a></li>
 								<li><a href="blog.html">المقالات</a></li>
 								<li><a href="contact.html">تواصل معنا</a></li>
 							</ul>
 						</div>
 					</div>
 					<div class="main-menu__right">
-						<div class="main-menu__search-call">
-							<div class="main-menu__search-box">
-								<a href="#" class="main-menu__search search-toggler icon-magnifying-glass"></a>
-							</div>
-						</div>
+						<a href="regist-journalist.html" class="thm-btn add_jornalist"> التسجيل كصحفي</a>
 					</div>
 				</div>
 			</nav>
@@ -101,7 +96,7 @@
 		<section class="bg_gray dashboard">
 			<div class="container">
 				<div class="row">
-					<div class="col-lg-3 mb30">
+					<div class="col-lg-3 mb-4">
 						<div class="card p-4">
 							<div class="profile_avatar">
 								<div class="profile_img">
@@ -117,8 +112,7 @@
 								<li><a href="account.html"><i class="fa fa-home"></i>لوحة التحكم</a></li>
 								<li><a href="account-edit.html"><i class="fas fa-users"></i>البيانات الشخصية</a></li>
 								<li><a href="account-contact.html" class="active"><i class="fas fa-list-ul"></i>بيانات التواصل</a></li>
-								<li><a href="account-work.html"><i class="fas fa-project-diagram"></i> سابقة الاعمال</a></li>
-								<li><a href="account-services.html"><i class="fas fa-list-alt"></i>  الخدمات المقدمة</a></li>
+								<li><a href="account-work.html"><i class="fas fa-project-diagram"></i> معرض الأعمال</a></li>
 								<li><a href="login.html"><i class="fas fa-sign-out-alt"></i>تسجيل الخروج</a></li>
 							</ul>
 						</div>
@@ -277,7 +271,7 @@
 		<div class="mobile-nav__content">
 			<span class="mobile-nav__close mobile-nav__toggler"><i class="fa fa-times"></i></span>
 			<div class="logo-box">
-				<a href="index.html" aria-label="logo image"><img src="assets/images/logo/logo.png" height="55"
+				<a href="index.html" aria-label="logo image"><img src="assets/images/logo/logo-wh.png" height="55"
 						alt="" /></a>
 			</div>
 			<div class="mobile-nav__container"></div>
@@ -298,20 +292,6 @@
 			</div>
 		</div>
 	</div>
-	<!--  search-popup -->
-	<div class="search-popup">
-		<div class="search-popup__overlay search-toggler"></div>
-		<!-- search-popup__overlay -->
-		<div class="search-popup__content">
-			<form action="#">
-				<label for="search" class="sr-only">إبحث هنا</label>
-				<input type="text" id="search" placeholder="إبحث هنا ..." />
-				<button type="submit" aria-label="search submit" class="thm-btn">
-					<i class="icon-magnifying-glass"></i>
-				</button>
-			</form>
-		</div>
-	</div>
 
 	<!--  Scroll top -->
 	<a href="#" data-target="html" class="scroll-to-target scroll-to-top"><i class="fa fa-angle-up"></i></a>
@@ -329,20 +309,12 @@
 	<script src="assets/vendors/odometer/odometer.min.js"></script>
 	<!-- form validate-->
 	<script src="assets/vendors/jquery-validate/jquery.validate.min.js"></script>
-	<!-- template js -->
-	<script src="assets/js/custom.js"></script>
 	<!-- select -->
 	<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
-	<script>
-		$(document).ready(function () {
-			$('.jop_select').select2();
-
-			$('.jop_select').one('select2:open', function (e) {
-				$('input.select2-search__field').prop('placeholder', 'بحث  عن المهنة أو الدور الصحفي ');
-			});
-
-		});
-	</script>
+	<!-- template js -->
+	<script src="assets/js/custom.js"></script>
+	<script src="assets/js/regist-cutom.js"></script>
+	
 
 </body>
 

@@ -19,7 +19,7 @@
 	<link rel="stylesheet" href="assets/vendors/owl-carousel/owl.theme.default.min.css" />
 	<link rel="stylesheet" href="assets/vendors/notech-icons/style.css">
 	<!-- select -->
-	<link rel="stylesheet" href="assets/vendors/nice-select/nice-select.css">
+	<link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
 	<!-- video popup -->
 	<link rel="stylesheet" href="assets/vendors/jquery-magnific-popup/jquery.magnific-popup.css" />
 	<!-- counter -->
@@ -45,7 +45,7 @@
 					<div class="main-header__top-left">
 						<ul class="list-unstyled main-header__top-right-menu">
 							<li><a href="login.html">تسجيل الدخول</a></li>
-							<li><a href="regist-journalist.html">تسجيل كصحفي</a></li>
+							<li><a href="register.html">تسجيل جديد</a></li>
 						</ul>
 					</div>
 					<div class="main-header__top-right">
@@ -73,19 +73,15 @@
 							<ul class="main-menu__list">
 								<li><a href="index.html">الرئيسية</a></li>
 								<li><a href="about.html">من نحن</a></li>
-								<li><a href="services.html">خدماتنا</a></li>
-								<li><a href="projects.html">الصحفيين</a></li>
+								<li><a href="work-gallery.html">معرض الأعمال</a></li>
+								<li><a href="journalist.html">الصحفيين</a></li>
 								<li><a href="blog.html">المقالات</a></li>
 								<li><a href="contact.html">تواصل معنا</a></li>
 							</ul>
 						</div>
 					</div>
 					<div class="main-menu__right">
-						<div class="main-menu__search-call">
-							<div class="main-menu__search-box">
-								<a href="#" class="main-menu__search search-toggler icon-magnifying-glass"></a>
-							</div>
-						</div>
+						<a href="regist-journalist.html" class="thm-btn add_jornalist"> التسجيل كصحفي</a>
 					</div>
 				</div>
 			</nav>
@@ -167,7 +163,7 @@
 
 										<div class="main-slider__btn-video-box">
 											<div class="main-slider__btn-box">
-												<a href="services.html" class="thm-btn main-slider__btn">خدماتنا</a>
+												<a href="about.html" class="thm-btn main-slider__btn">معرفة المزيد</a>
 											</div>
 
 										</div>
@@ -276,7 +272,7 @@
 											<img src="assets/images/shapes/section-title-shape.png" alt="">
 										</div>
 									</div>
-									<h2 class="section-title__title">الأبواب الرئيسية للمنصة</h2>
+									<h2 class="section-title__title"> الخدمات المقدمة </h2>
 								</div>
 							</div>
 						</div>
@@ -382,7 +378,7 @@
 									<div class="team-one-shape">
 										<img src="assets/images/shapes/team-one-shape.png" alt="">
 									</div>
-									<h4 class="team-one__name"><a href="team-details.html">أحمد محمد</a></h4>
+									<h4 class="team-one__name"><a href="journalist_details.html">أحمد محمد</a></h4>
 									<p class="team-one__title">كاتب ومحرر</p>
 								</div>
 							</div>
@@ -404,7 +400,7 @@
 									<div class="team-one-shape">
 										<img src="assets/images/shapes/team-one-shape.png" alt="">
 									</div>
-									<h4 class="team-one__name"><a href="team-details.html">عبدالله محمد</a></h4>
+									<h4 class="team-one__name"><a href="journalist_details.html">عبدالله محمد</a></h4>
 									<p class="team-one__title">ناشر</p>
 								</div>
 							</div>
@@ -426,7 +422,7 @@
 									<div class="team-one-shape">
 										<img src="assets/images/shapes/team-one-shape.png" alt="">
 									</div>
-									<h4 class="team-one__name"><a href="team-details.html">محمد محمد</a></h4>
+									<h4 class="team-one__name"><a href="journalist_details.html">محمد محمد</a></h4>
 									<p class="team-one__title">مستشار إعلامي</p>
 								</div>
 							</div>
@@ -448,7 +444,7 @@
 									<div class="team-one-shape">
 										<img src="assets/images/shapes/team-one-shape.png" alt="">
 									</div>
-									<h4 class="team-one__name"><a href="team-details.html">عبدالله محمد</a></h4>
+									<h4 class="team-one__name"><a href="journalist_details.html">عبدالله محمد</a></h4>
 									<p class="team-one__title">ناشر</p>
 								</div>
 							</div>
@@ -456,7 +452,7 @@
 					</div>
 				</div>
 				<div class="col-12 text-center mt-5">
-					<a href="" class="thm-btn">عرض الصحفيين</a>
+					<a href="journalist.html" class="thm-btn">عرض الصحفيين</a>
 				</div>
 			</div>
 		</section>
@@ -603,7 +599,7 @@
 									</div>
 								</li>
 							</ul>
-							<a href="" class="thm-btn welcome__btn">عرض الصحفيين</a>
+							<a href="journalist.html" class="thm-btn welcome__btn">عرض الصحفيين</a>
 						</div>
 					</div>
 				</div>
@@ -655,10 +651,12 @@
 									<img src="assets/images/project/project-page-2-1.jpg" alt="">
 								</div>
 								<div class="project-two__content">
-									<h3 class="project-two__title"><a href="project-details.html">كتابة وتحرير</a>
+									<h3 class="project-two__title">
+										<p class="project-two__sub-title"><a href="journalist_details.html">أحمد محمد</a></p>
+										<a href="#">كتابة وتحرير</a>
 									</h3>
 									<div class="project-two__arrow">
-										<a href="project-details.html"><i class="fa fa-long-arrow-alt-right"></i></a>
+										<a href="#"><i class="fa fa-long-arrow-alt-right"></i></a>
 									</div>
 								</div>
 							</div>
@@ -670,10 +668,12 @@
 									<img src="assets/images/project/project-page-2-2.jpg" alt="">
 								</div>
 								<div class="project-two__content">
-									<h3 class="project-two__title"><a href="project-details.html"> كاتب تقارير طويلة وتحليالت </a>
+									<h3 class="project-two__title">
+										<p class="project-two__sub-title"><a href="journalist_details.html">أحمد محمد</a></p>
+										<a href="#"> كاتب تقارير طويلة وتحليالت </a>
 									</h3>
 									<div class="project-two__arrow">
-										<a href="project-details.html"><i class="fa fa-long-arrow-alt-right"></i></a>
+										<a href="#"><i class="fa fa-long-arrow-alt-right"></i></a>
 									</div>
 								</div>
 							</div>
@@ -685,10 +685,12 @@
 									<img src="assets/images/project/project-page-2-3.jpg" alt="">
 								</div>
 								<div class="project-two__content">
-									<h3 class="project-two__title"><a href="project-details.html"> مستشار تحريري</a>
+									<h3 class="project-two__title">
+										<p class="project-two__sub-title"><a href="journalist_details.html">أحمد محمد</a></p>
+										<a href="#"> مستشار تحريري</a>
 									</h3>
 									<div class="project-two__arrow">
-										<a href="project-details.html"><i class="fa fa-long-arrow-alt-right"></i></a>
+										<a href="#"><i class="fa fa-long-arrow-alt-right"></i></a>
 									</div>
 								</div>
 							</div>
@@ -700,10 +702,12 @@
 									<img src="assets/images/project/project-page-2-4.jpg" alt="">
 								</div>
 								<div class="project-two__content">
-									<h3 class="project-two__title"><a href="project-details.html"> مستشار تحريري</a>
+									<h3 class="project-two__title">
+										<p class="project-two__sub-title"><a href="journalist_details.html">أحمد محمد</a></p>
+										<a href="#"> مستشار تحريري</a>
 									</h3>
 									<div class="project-two__arrow">
-										<a href="project-details.html"><i class="fa fa-long-arrow-alt-right"></i></a>
+										<a href="#"><i class="fa fa-long-arrow-alt-right"></i></a>
 									</div>
 								</div>
 							</div>
@@ -825,7 +829,7 @@
 		<div class="mobile-nav__content">
 			<span class="mobile-nav__close mobile-nav__toggler"><i class="fa fa-times"></i></span>
 			<div class="logo-box">
-				<a href="index.html" aria-label="logo image"><img src="assets/images/logo/logo.png" height="55"
+				<a href="index.html" aria-label="logo image"><img src="assets/images/logo/logo-wh.png" height="55"
 						alt="" /></a>
 			</div>
 			<div class="mobile-nav__container"></div>
@@ -846,20 +850,6 @@
 			</div>
 		</div>
 	</div>
-	<!--  search-popup -->
-	<div class="search-popup">
-		<div class="search-popup__overlay search-toggler"></div>
-		<!-- search-popup__overlay -->
-		<div class="search-popup__content">
-			<form action="#">
-				<label for="search" class="sr-only">إبحث هنا</label>
-				<input type="text" id="search" placeholder="إبحث هنا ..." />
-				<button type="submit" aria-label="search submit" class="thm-btn">
-					<i class="icon-magnifying-glass"></i>
-				</button>
-			</form>
-		</div>
-	</div>
 
 	<!--  Scroll top -->
 	<a href="#" data-target="html" class="scroll-to-target scroll-to-top"><i class="fa fa-angle-up"></i></a>
@@ -871,16 +861,17 @@
 	<script src="assets/vendors/swiper/swiper.min.js"></script>
 	<script src="assets/vendors/jquery-appear/jquery.appear.min.js"></script>
 	<script src="assets/vendors/wow/wow.js"></script>
-	<!-- select -->
-	<script src="assets/vendors/nice-select/jquery.nice-select.min.js"></script>
 	<!-- video popup -->
 	<script src="assets/vendors/jquery-magnific-popup/jquery.magnific-popup.min.js"></script>
 	<!-- counter -->
 	<script src="assets/vendors/odometer/odometer.min.js"></script>
 	<!-- form validate-->
 	<script src="assets/vendors/jquery-validate/jquery.validate.min.js"></script>
+	<!-- select -->
+	<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
 	<!-- template js -->
 	<script src="assets/js/custom.js"></script>
+	<script src="assets/js/regist-cutom.js"></script>
 
 </body>
 
