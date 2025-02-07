@@ -109,142 +109,211 @@
 							<h2 class="section-title__title">تسجيل كصحفي</h2>
 						</div>
 						<form action="">
-							<div class="row m-0 mt-5">
-								<div class="col-lg-4 mb-5">
-									<div class="comment-form__input-box">
-										<label for="">تحميل صورة</label>
-										<div class="avatar-upload mx-auto">
-											<div class="avatar-edit">
-												<input type='file' id="imageUpload" accept=".png, .jpg, .jpeg" />
-												<label for="imageUpload" title="Edit">تحميل صورة</label>
-											</div>
-											<div class="avatar-preview">
-												<div id="imagePreview"
-													style="background-image: url(assets/images/team/team-1-2.jpg);">
-												</div>
-											</div>
-										</div>
+							<div class="row form-wizard">
+								<div class="col-12">
+									<div class="form-wizard-header text-center">
+										<ul class="list-unstyled form-wizard-steps clearfix">
+											<li class="active"><span>1</span></li>
+											<li><span>2</span></li>
+											<li><span>3</span></li>
+										</ul>
 									</div>
 								</div>
-								<div class="col-lg-8 row m-0 p-0 ">
-									<div class="col-12">
-										<div class="comment-form__input-box">
-											<label for="name"> الاسم كما يظهر في الهوية
-												<span>*</span></label>
-											<input type="text" id="name" name="name" required>
+								<div class="col-md-12">
+									<fieldset class="wizard-fieldset show">
+										<div class="row m-0">
+											<div class="col-lg-4 mb-5">
+												<div class="comment-form__input-box">
+													<label for="">تحميل صورة</label>
+													<div class="avatar-upload mx-auto">
+														<div class="avatar-edit">
+															<input type='file' id="imageUpload"
+																accept=".png, .jpg, .jpeg" />
+															<label for="imageUpload" title="Edit">تحميل صورة</label>
+														</div>
+														<div class="avatar-preview">
+															<div id="imagePreview"
+																style="background-image: url(assets/images/team/team-1-2.jpg);">
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-lg-8 row m-0 p-0">
+												<div class="col-12">
+													<div class="comment-form__input-box">
+														<label for="name"> الاسم كما يظهر في الهوية
+															<span>*</span></label>
+														<input class="wizard-required" type="text" id="name"
+															name="name">
+														<div class="wizard-form-error"></div>
+													</div>
+												</div>
+												<div class="col-md-6">
+													<div class="comment-form__input-box">
+														<label for="phone"> رقم الجوال <span>*</span></label>
+														<input class="wizard-required" type="text" id="phone"
+															name="phone">
+														<div class="wizard-form-error"></div>
+													</div>
+												</div>
+												<div class="col-md-6">
+													<div class="comment-form__input-box">
+														<label for="email">البريد الالكتروني <span>*</span></label>
+														<input class="wizard-required" type="email" id="email"
+															name="email">
+														<div class="wizard-form-error"></div>
+													</div>
+												</div>
+												<div class="col-md-6">
+													<div class="comment-form__input-box">
+														<label for="start"> رقم التسجيل الاعلامي <span>*</span></label>
+														<input class="wizard-required" type="text" id="start"
+															name="start">
+														<div class="wizard-form-error"></div>
+													</div>
+												</div>
+												<div class="col-md-6">
+													<div class="comment-form__input-box">
+														<label for="end"> تاريخ انتهاء التسجيل الاعلامي
+															<span>*</span></label>
+														<input class="wizard-required" type="date" id="start"
+															name="end">
+														<div class="wizard-form-error"></div>
+													</div>
+												</div>
+												<div class="col-12 comment-form__input-box">
+													<label for="end">المهنة أو الدور الصحفي</label>
+													<select class="jop_select wide" name="" id="">
+														<option value="">--</option>
+														<option value="">مدير تحرير</option>
+														<option value="">كاتب</option>
+														<option value="">مساعد محرر</option>
+														<option value="">صحافي</option>
+														<option value="">مقدم فعاليات ومؤتمرات</option>
+														<option value="">مدير حوار</option>
+														<option value="">مستشار</option>
+														<option value="">كاتب محتوى إبداعي</option>
+														<option value="">محرر صحفي</option>
+														<option value="">مدقق لغوي</option>
+														<option value="">كاتب سيناريو</option>
+														<option value="">كاتب خطابات وكلمات</option>
+														<option value="">كاتب عمود</option>
+														<option value="">محرر صور</option>
+														<option value="">مدير تحرير رقمي</option>
+														<option value="">محرر أخبار عاجلة</option>
+														<option value="">صحفي استقصائي</option>
+														<option value="">محرر ثقافي أو فني</option>
+														<option value="">محرر فيديو</option>
+														<option value="">محرر رياضي</option>
+														<option value="">كاتب تقارير طويلة وتحليلات</option>
+														<option value="">مستشار تحريري</option>
+														<option value="">مراسل متخصص (بيئي، صحي، قضائي، اقتصادي)
+														</option>
+														<option value="">مدير إنتاج صحفي</option>
+														<option value="">محقق صحفي</option>
+														<option value="">باحث صحفي</option>
+														<option value="">كاتب تحقيقات معمقة</option>
+														<option value="">أخري</option>
+													</select>
+												</div>
+											</div>
+											
+											<div class="col-12 mt-4 clearfix text-start">
+												<a href="javascript:;"
+													class="form-wizard-next-btn thm-btn comment-form__btn">التالي</a>
+											</div>
 										</div>
-									</div>
-									<div class="col-md-6">
-										<div class="comment-form__input-box">
-											<label for="phone"> رقم الجوال <span>*</span></label>
-											<input type="text" id="phone" name="phone">
+									</fieldset>
+									<fieldset class="wizard-fieldset">
+										<div class="row m-0">
+											<div class="col-12">
+												<div class="comment-form__input-box">
+													<label for="about"> نبذة مختصرة</label>
+													<textarea id="about" name="about" rows="1"></textarea>
+												</div>
+											</div>
+											<div class="col-12 comment-form__input-box">
+												<label for="end"> اختيار الخدمات المقدمة</label>
+												<select class="services_select wide" multiple="multiple">
+													<option value="">كتابة</option>
+													<option value="">تحرير</option>
+													<option value="">استشارات إعلامية</option>
+													<option value="">محتوي رقمي</option>
+													<option value="">مراجعة لغوية</option>
+												</select>
+												<small class="attention">ملحوظه : يمكنك إختيار أكثر من خدمة بحد أدني
+													خدمة واحدة</small>
+											</div>
+											<div class="col-12">
+												<div class="position-relative">
+													<h5 class="mb-3 mt-4"> روابط الاعمال</h5>
+													<a href="javascript:;" class="add_link thm-btn">إضافة رابط</a>
+												</div>
+												<div id="new_link">
+													<div class="row mb-3">
+														<div class="col-lg-4 col-md-12 comment-form__input-box mb-2">
+															<label for="title"> عنوان العمل </label>
+															<input type="text" id="title" name="title" placeholder="">
+														</div>
+														<div class="col-lg-4 col-md-6 comment-form__input-box mb-2">
+															<label for="link"> الرابط </label>
+															<input type="text" id="link" name="link" placeholder="#">
+														</div>
+														<div class="col-lg-4 col-md-6 comment-form__input-box mb-2">
+															<label>صورة الرابط</label>
+															<div class='file-input'>
+																<input type='file' name="image">
+																<span class='button'>إختر </span>
+																<label class='label' data-js-label>لا يوجد ملفات</label>
+															</div>
+														</div>
+													</div>
+												</div>
+
+											</div>
+											<div class="col-12 mt-4 clearfix text-start">
+												<a href="javascript:;"
+													class="form-wizard-previous-btn thm-btn">السابق</a>
+												<a href="javascript:;" class="form-wizard-next-btn thm-btn ">التالي</a>
+											</div>
 										</div>
-									</div>
-									<div class="col-md-6">
-										<div class="comment-form__input-box">
-											<label for="email">البريد الالكتروني <span>*</span></label>
-											<input type="email" id="email" name="email">
+
+									</fieldset>
+									<fieldset class="wizard-fieldset">
+										<div class="row m-0">
+											<h5 class="mb-3 mt-2"> وسائل التواصل</h5>
+											<div class="col-md-6">
+												<div class="comment-form__input-box">
+													<label for="whatapp"> واتساب</label>
+													<input type="text" id="whatapp" name="whatapp">
+												</div>
+											</div>
+											<div class="col-md-6">
+												<div class="comment-form__input-box">
+													<label for="e-mail"> بريد إلكتروني</label>
+													<input type="email" id="e-mail" name="e-mail">
+												</div>
+											</div>
+											<div class="col-md-6">
+												<div class="comment-form__input-box">
+													<label for="linkedin">لينكدان </label>
+													<input type="text" id="linkedin" name="linkedin">
+												</div>
+											</div>
+											<div class="col-md-6">
+												<div class="comment-form__input-box">
+													<label for="twitter">توتير </label>
+													<input type="text" id="twitter" name="twitter">
+												</div>
+											</div>
+											<div class="col-12 mt-4 clearfix text-start">
+												<a href="javascript:;" class="form-wizard-previous-btn thm-btn">السابق</a>
+												<a href="javascript:;" data-bs-toggle="modal" data-bs-target="#thanks_popup"
+													class="form-wizard-submit thm-btn">إرسال</a>
+											</div>
 										</div>
-									</div>
-									<div class="col-md-6">
-										<div class="comment-form__input-box">
-											<label for="start"> رقم التسجيل الاعلامي <span>*</span></label>
-											<input type="text" id="start" name="start">
-										</div>
-									</div>
-									<div class="col-md-6">
-										<div class="comment-form__input-box">
-											<label for="end"> تاريخ انتهاء التسجيل الاعلامي
-												<span>*</span></label>
-											<input type="date" id="start" name="end">
-										</div>
-									</div>
-									<div class="col-12 comment-form__input-box">
-										<label for="end">المهنة أو الدور الصحفي</label>
-										<select class="jop_select wide" name="" id="">
-											<option value="">--</option>
-											<option value="">مدير تحرير</option>
-											<option value="">كاتب</option>
-											<option value="">مساعد محرر</option>
-											<option value="">صحافي</option>
-											<option value="">مقدم فعاليات ومؤتمرات</option>
-											<option value="">مدير حوار</option>
-											<option value="">مستشار</option>
-											<option value="">كاتب محتوى إبداعي</option>
-											<option value="">محرر صحفي</option>
-											<option value="">مدقق لغوي</option>
-											<option value="">كاتب سيناريو</option>
-											<option value="">كاتب خطابات وكلمات</option>
-											<option value="">كاتب عمود</option>
-											<option value="">محرر صور</option>
-											<option value="">مدير تحرير رقمي</option>
-											<option value="">محرر أخبار عاجلة</option>
-											<option value="">صحفي استقصائي</option>
-											<option value="">محرر ثقافي أو فني</option>
-											<option value="">محرر فيديو</option>
-											<option value="">محرر رياضي</option>
-											<option value="">كاتب تقارير طويلة وتحليلات</option>
-											<option value="">مستشار تحريري</option>
-											<option value="">مراسل متخصص (بيئي، صحي، قضائي، اقتصادي)
-											</option>
-											<option value="">مدير إنتاج صحفي</option>
-											<option value="">محقق صحفي</option>
-											<option value="">باحث صحفي</option>
-											<option value="">كاتب تحقيقات معمقة</option>
-											<option value="">أخري</option>
-										</select>
-									</div>
-									<div class="col-12 comment-form__input-box">
-										<label for="end"> اختيار الخدمات المقدمة</label>
-										<select class="services_select wide" multiple="multiple">
-											<option value="">كتابة</option>
-											<option value="">تحرير</option>
-											<option value="">استشارات إعلامية</option>
-											<option value="">محتوي رقمي</option>
-											<option value="">مراجعة لغوية</option>
-										</select>
-										<small class="attention">ملحوظه : يمكنك إختيار أكثر من خدمة بحد أدني
-											خدمة واحدة</small>
-									</div>
-									<div class="col-12">
-										<div class="comment-form__input-box">
-											<label for="about"> نبذة مختصرة</label>
-											<textarea id="about" name="about" rows="1"></textarea>
-										</div>
-									</div>
-									<div class="col-12">
-										<h5 class="mb-3 mt-2"> وسائل التواصل</h5>
-									</div>
-									<div class="col-md-6">
-										<div class="comment-form__input-box">
-											<label for="whatapp"> واتساب</label>
-											<input type="text" id="whatapp" name="whatapp">
-										</div>
-									</div>
-									<div class="col-md-6">
-										<div class="comment-form__input-box">
-											<label for="e-mail"> بريد إلكتروني</label>
-											<input type="email" id="e-mail" name="e-mail">
-										</div>
-									</div>
-									<div class="col-md-6">
-										<div class="comment-form__input-box">
-											<label for="linkedin">لينكدان </label>
-											<input type="text" id="linkedin" name="linkedin">
-										</div>
-									</div>
-									<div class="col-md-6">
-										<div class="comment-form__input-box">
-											<label for="twitter">توتير </label>
-											<input type="text" id="twitter" name="twitter">
-										</div>
-									</div>
-									<div class="col-12">
-										<button type="submit" class="thm-btn">
-											<a href="javascript:;" style="color: #fff;" data-bs-toggle="modal"
-												data-bs-target="#thanks_popup">إرسال</a>
-										</button>
-									</div>
+									</fieldset>
 								</div>
 							</div>
 						</form>
@@ -259,13 +328,13 @@
 			<div class="modal-dialog" role="document">
 				<div class="modal-content">
 					<div class="modal-body message_content">
-						<a type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+						<a type="button" class="close" data-dismiss="modal" aria-label="Close">
 							<span aria-hidden="true">&times;</span>
 						</a>
 						<div class="col-12 text-center modal_thanks">
 							<i class="fas fa-check-circle"></i>
 							<h3 class="text-center mb-4">شكرا على التسجيل كصحفي.</h3>
-							<p> تم إضافة بياناتك الشخصية والاعمال الخاصة بك في الحساب الشخصي الخاص بك علي منصة صحفي
+							<p> تم إضافة بياناتك الشخصية والاعمال الخاصة بك في الحساب الشخصي الخاص بك علي منصة صحفي 
 							</p>
 							<div class="col-12 text-center mb-3 mt-4">
 								<a href="account.html" class="thm-btn">الذهاب الي الحساب الشخصي</a>
@@ -430,7 +499,7 @@
 	<script src="assets/js/custom.js"></script>
 	<script src="assets/js/regist-cutom.js"></script>
 
-
+	
 </body>
 
 </html>
