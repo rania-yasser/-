@@ -18,8 +18,6 @@
 	<link rel="stylesheet" href="assets/vendors/owl-carousel/owl.carousel.min.css" />
 	<link rel="stylesheet" href="assets/vendors/owl-carousel/owl.theme.default.min.css" />
 	<link rel="stylesheet" href="assets/vendors/notech-icons/style.css">
-	<!-- select -->
-	<link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
 	<!-- video popup -->
 	<link rel="stylesheet" href="assets/vendors/jquery-magnific-popup/jquery.magnific-popup.css" />
 	<!-- counter -->
@@ -88,14 +86,14 @@
 								</div>
 								<div class="user">
 									<h3>عبدالله محمد </h3>
-									<p>كاتب وناشر</p>
+									<p> مستخدم </p>
 								</div>
-								
+
 							</div>
 							<div class="menu">
 								<ul>
-									<li><a href="account.html"><i class="fas fa-users"></i>البيانات الشخصية</a></li>
-									<li><a href="account-work.html"><i class="fas fa-project-diagram"></i>معرض الاعمال</a></li>
+									<li><a href="user-account.html"><i class="fas fa-users"></i>البيانات الشخصية</a></li>
+									<li><a href="user-account-rating.html"><i class="fas fa-star"></i>التقييمات</a></li>
 									<li><a href="#"><i class="fas fa-sign-out-alt"></i>تسجيل خروج</a></li>
 								</ul>
 							</div>
@@ -122,58 +120,35 @@
 								</div>
 								<div class="profile_name">
 									<h4> محمد أحمد
-										<span>كاتب ومحرر</span>
+										<span>مستخدم </span>
 									</h4>
 								</div>
 							</div>
 							<ul class="menu-col">
-								<li><a href="account.html"><i class="fa fa-home"></i>لوحة التحكم</a></li>
-								<li><a href="account-edit.html"><i class="fas fa-users"></i>البيانات الشخصية</a></li>
-								<li><a href="account-contact.html" class="active"><i class="fas fa-list-ul"></i>بيانات التواصل</a></li>
-								<li><a href="account-work.html"><i class="fas fa-project-diagram"></i> معرض الأعمال</a></li>
-								<li><a href="account-rating.html"><i class="fas fa-star"></i>  التقييمات </a></li>
+								<li><a href="user-account.html" class="active"><i class="fa fa-home"></i>لوحة التحكم</a></li>
+								<li><a href="user-account-edit.html"><i class="fas fa-users"></i>البيانات الشخصية</a></li>
+								<li><a href="user-account-rating.html"><i class="fas fa-star"></i>  التقييمات </a></li>
 								<li><a href="login.html"><i class="fas fa-sign-out-alt"></i>تسجيل الخروج</a></li>
 							</ul>
 						</div>
 					</div>
 
 					<div class="col-lg-9">
+					
 						<div class="card p-4 rounded-5 mb25">
-							<form action="">
-								<div class="row m-0">
-									<div class="col-12">
-										<h4 class="title_account mb-4"> بيانات التواصل</h4>
-									</div>
-									<div class="col-md-6">
-										<div class="comment-form__input-box">
-											<label for="whatapp"> واتساب</label>
-											<input type="text" id="whatapp" name="whatapp"  value="010000000000">
-										</div>
-									</div>
-									<div class="col-md-6">
-										<div class="comment-form__input-box">
-											<label for="e-mail"> بريد إلكتروني</label>
-											<input type="email" id="e-mail" name="e-mail" value="info@gmail.com">
-										</div>
-									</div>
-									<div class="col-md-6">
-										<div class="comment-form__input-box">
-											<label for="linkedin">لينكدان </label>
-											<input type="text" id="linkedin" name="linkedin" value="#">
-										</div>
-									</div>
-									<div class="col-md-6">
-										<div class="comment-form__input-box">
-											<label for="twitter">توتير </label>
-											<input type="text" id="twitter" name="twitter" value="#">
-										</div>
-									</div>
+							<h4 class="title_account"> البيانات الشخصية</h4>
+							<ul class="personal_information">
+								<li><span>إسم المستخدم:</span> أحمد محمد عبدالله</li>
+								<li><span>رقم الهاتف جوال :</span> 0100000000</li>
+								<li><span>البريد الالكتروني:</span> info@gmail.com</li>
+								<li><span> كلمة المرور:</span>   123456 </li>
+							</ul>
+							<div class="col-12 text-start mt-3">
+								<a href="user-account-edit.html" class="thm-btn">تعديل</a>
+							</div>
+						</div>
 
-									<div class="col-12 text-start mt-3">
-										<button type="submit" class="thm-btn">حفظ</button>
-									</div>
-								</div>
-							</form>
+							
 						</div>
 					</div>
 				</div>
@@ -333,8 +308,15 @@
 	<!-- template js -->
 	<script src="assets/js/custom.js"></script>
 	<script src="assets/js/regist-cutom.js"></script>
-	
 
+	<script>
+		let profile = document.querySelector('.profile');
+		let menu = document.querySelector('.menu');
+
+		profile.onclick = function () {
+			menu.classList.toggle('active');
+		}
+	</script>
 </body>
 
 </html>

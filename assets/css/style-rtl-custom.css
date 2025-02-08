@@ -241,7 +241,7 @@ body {
   background-color: #fff;
   padding: 20px 20px;
 }
-.dashboard .container{
+.dashboard .container {
   background-color: transparent;
   padding: 0;
 }
@@ -394,25 +394,25 @@ button.thm-btn {
   position: relative;
   top: 1px;
 }
-.team-details__top-right .get-to-know__points li .text p{
+.team-details__top-right .get-to-know__points li .text p {
   color: var(--main-gray) !important;
   font-size: 16px !important;
 }
 
-.edit_profile .avatar-upload .avatar-preview{
+.edit_profile .avatar-upload .avatar-preview {
   max-width: 220px;
   height: 100px;
 }
-.edit_profile .avatar-upload{
+.edit_profile .avatar-upload {
   border: 0;
 }
-.edit_profile .avatar-upload .avatar-edit{
+.edit_profile .avatar-upload .avatar-edit {
   position: absolute;
   width: 100px;
   bottom: 25px;
   right: 200px;
 }
-.edit_profile .avatar-upload .avatar-edit input + label{
+.edit_profile .avatar-upload .avatar-edit input + label {
   height: 35px;
 }
 /* account_dropdown */
@@ -434,7 +434,7 @@ button.thm-btn {
 .account_dropdown .profile p {
   line-height: 1;
   font-size: 14px;
-  opacity: .6;
+  opacity: 0.6;
 }
 .account_dropdown .profile .img-box {
   position: relative;
@@ -452,21 +452,21 @@ button.thm-btn {
   height: 100%;
   object-fit: cover;
 }
-.account_dropdown  .menu {
+.account_dropdown .menu {
   position: absolute;
   top: 100%;
   right: 0;
   width: 200px;
   min-height: 100px;
   background: #fff;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, .2);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
   opacity: 0;
   transform: translateY(-10px);
   visibility: hidden;
   transition: 300ms;
 }
 .account_dropdown .menu::before {
-  content: '';
+  content: "";
   position: absolute;
   top: -10px;
   right: 14px;
@@ -475,7 +475,7 @@ button.thm-btn {
   background: #fff;
   transform: rotate(45deg);
   z-index: -1;
-  box-shadow: 0 6px 16px rgba(0, 0, 0, .2);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
 }
 .account_dropdown .menu.active {
   opacity: 1;
@@ -483,7 +483,7 @@ button.thm-btn {
   visibility: visible;
 }
 
-.account_dropdown  .menu ul {
+.account_dropdown .menu ul {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -492,7 +492,7 @@ button.thm-btn {
   padding: 10px 0;
 }
 
-.account_dropdown  .menu ul li {
+.account_dropdown .menu ul li {
   list-style: none;
 }
 
@@ -513,9 +513,146 @@ button.thm-btn {
 .account_dropdown .menu ul li a i {
   color: var(--main-base);
 }
-.add_new_link{
+.add_new_link {
   float: left;
   margin-top: -56px;
   padding: 3px 17px;
   font-size: 14px;
+}
+/* rate_star */
+.rate_star {
+  list-style: none;
+  padding: 0;
+  margin-top: 8px;
+}
+.rate_star li {
+  display: inline-block;
+  font-size: 17px;
+  color: #fed700;
+}
+.rate_star li .gray{
+  color: var(--main-gray);
+  opacity: .5;
+}
+/* write rate */
+.rating {
+  display: table;
+}
+.rating > input {
+  display: none;
+}
+.rating > label:before {
+  margin: 3px;
+  font-size: 17px;
+  font-family: "Font Awesome 5 free";
+  display: inline-block;
+  content: "\f005";
+  font-weight: 700;
+}
+
+.rating > label {
+  color: #ddd;
+  float: left;
+}
+.rating > input:checked ~ label {
+  color: #fed700;
+  font-weight: 700;
+}
+.rating:not(:checked) > label:hover {
+  color: #fed700;
+}
+.rating:not(:checked) > label:hover ~ label {
+  color: #fed700;
+  font-weight: 700;
+}
+.rating > input:checked + label:hover,
+.rating > input:checked ~ label:hover {
+  color: #ffe552;
+  font-weight: 700;
+}
+.rating > label:hover ~ input:checked ~ label,
+.rating > input:checked ~ label:hover ~ label {
+  color: #ffe552;
+  font-weight: 700;
+}
+/**/
+.rating_form {
+  padding: 10px;
+}
+.rating_form h3 {
+  background-color: var(--main-base);
+  font-size: 17px;
+  margin-bottom: 25px;
+  padding: 15px;
+  color: #fff;
+}
+.rating_form .close {
+  color: #fff;
+  font-weight: 700;
+  font-size: 23px;
+  top: 18px;
+  right: 20px;
+}
+.rating_form h5 {
+  font-size: 16px;
+  margin-bottom: 7px;
+}
+.rating_form .thm-btn {
+  padding: 8px 40px;
+}
+.rating_form form{
+  padding: 0 10px;
+}
+/* overall_rate page account */
+.overall_rate h5{
+  font-size: 40px;
+  font-weight: bold;
+}
+.overall_rate h5 span{
+  font-size: 18px;
+  font-weight: normal;
+  color: var(--main-gray);
+  letter-spacing: 7px;
+}
+.overall_rate h6{
+  font-size: 15px;
+  color: var(--main-gray);
+  margin-top: 13px;
+  margin-bottom: 20px;
+}
+.overall_rate h6 span{
+  font-weight: bold;
+  color: var(--main-primary);
+}
+.overall_rate .progress{
+  max-width: 75%;
+  height: 14px;
+  width: 100%;
+  border-radius: 15px;
+}
+.overall_rate .progress .progress-bar{
+  background-color: #fed700;
+}
+.overall_rate .all span{
+  font-size: 15px;
+  min-width: 41px;
+}
+.overall_rate .all span i{
+  font-size: 10px;
+}
+.overall_rate .all span.total{
+  color: var(--main-gray);
+  text-align: center;
+}
+/* table_rate */
+.table_rate thead td{
+  background-color: var(--main-base);
+  color: #fff;
+  font-size: 15px;
+}
+.table_rate tbody td{
+  font-size: 15px;
+}
+.table_rate tbody td a{
+  color: var(--main-primary);
 }

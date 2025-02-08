@@ -20,6 +20,7 @@
 	<link rel="stylesheet" href="assets/vendors/notech-icons/style.css">
 	<!-- select -->
 	<link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+
 	<!-- video popup -->
 	<link rel="stylesheet" href="assets/vendors/jquery-magnific-popup/jquery.magnific-popup.css" />
 	<!-- counter -->
@@ -88,14 +89,14 @@
 								</div>
 								<div class="user">
 									<h3>عبدالله محمد </h3>
-									<p>كاتب وناشر</p>
+									<p> مستخدم </p>
 								</div>
-								
+
 							</div>
 							<div class="menu">
 								<ul>
-									<li><a href="account.html"><i class="fas fa-users"></i>البيانات الشخصية</a></li>
-									<li><a href="account-work.html"><i class="fas fa-project-diagram"></i>معرض الاعمال</a></li>
+									<li><a href="user-account.html"><i class="fas fa-users"></i>البيانات الشخصية</a></li>
+									<li><a href="user-account-rating.html"><i class="fas fa-star"></i>التقييمات</a></li>
 									<li><a href="#"><i class="fas fa-sign-out-alt"></i>تسجيل خروج</a></li>
 								</ul>
 							</div>
@@ -122,16 +123,14 @@
 								</div>
 								<div class="profile_name">
 									<h4> محمد أحمد
-										<span>كاتب ومحرر</span>
+										<span>مستخدم </span>
 									</h4>
 								</div>
 							</div>
 							<ul class="menu-col">
-								<li><a href="account.html"><i class="fa fa-home"></i>لوحة التحكم</a></li>
-								<li><a href="account-edit.html"><i class="fas fa-users"></i>البيانات الشخصية</a></li>
-								<li><a href="account-contact.html" class="active"><i class="fas fa-list-ul"></i>بيانات التواصل</a></li>
-								<li><a href="account-work.html"><i class="fas fa-project-diagram"></i> معرض الأعمال</a></li>
-								<li><a href="account-rating.html"><i class="fas fa-star"></i>  التقييمات </a></li>
+								<li><a href="user-account.html"><i class="fa fa-home"></i>لوحة التحكم</a></li>
+								<li><a href="user-account-edit.html" class="active"><i class="fas fa-users"></i>البيانات الشخصية</a></li>
+								<li><a href="user-account-rating.html"><i class="fas fa-star"></i>  التقييمات </a></li>
 								<li><a href="login.html"><i class="fas fa-sign-out-alt"></i>تسجيل الخروج</a></li>
 							</ul>
 						</div>
@@ -142,33 +141,62 @@
 							<form action="">
 								<div class="row m-0">
 									<div class="col-12">
-										<h4 class="title_account mb-4"> بيانات التواصل</h4>
+										<h4 class="title_account mb-4"> البيانات الشخصية</h4>
 									</div>
-									<div class="col-md-6">
+									<div class="col-12 edit_profile">
 										<div class="comment-form__input-box">
-											<label for="whatapp"> واتساب</label>
-											<input type="text" id="whatapp" name="whatapp"  value="010000000000">
+											<label for="">تغيير صورة</label>
+											<div class="avatar-upload mx-auto">
+												<div class="avatar-edit">
+													<input type='file' id="imageUpload"
+														accept=".png, .jpg, .jpeg" />
+													<label for="imageUpload" title="Edit">تحميل صورة</label>
+												</div>
+												<div class="avatar-preview">
+													<div id="imagePreview"
+														style="background-image: url(assets/images/team/team-1-2.jpg);">
+													</div>
+												</div>
+											</div>
 										</div>
 									</div>
 									<div class="col-md-6">
 										<div class="comment-form__input-box">
-											<label for="e-mail"> بريد إلكتروني</label>
-											<input type="email" id="e-mail" name="e-mail" value="info@gmail.com">
+											<label for="name"> إسم المستخدم </label>
+											<input type="text" id="name" name="name" value="أحمد محمد">
 										</div>
 									</div>
 									<div class="col-md-6">
 										<div class="comment-form__input-box">
-											<label for="linkedin">لينكدان </label>
-											<input type="text" id="linkedin" name="linkedin" value="#">
+											<label for="phone"> رقم الجوال</label>
+											<input type="text" id="phone" name="phone" value="0110000000">
 										</div>
 									</div>
 									<div class="col-md-6">
 										<div class="comment-form__input-box">
-											<label for="twitter">توتير </label>
-											<input type="text" id="twitter" name="twitter" value="#">
+											<label for="email">البريد الالكتروني</label>
+											<input type="email" id="email" name="email" placeholder="info@mail.com">
 										</div>
 									</div>
-
+									<div class="col-md-6">
+										<div class="comment-form__input-box">
+											<label for="password"> كلمة المرور</label>
+											<input type="password" id="password" name="password" placeholder="123456">
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="comment-form__input-box">
+											<label for="password_new"> كلمة المرور الجديدة</label>
+											<input type="password" id="password_new" name="password_new" >
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="comment-form__input-box">
+											<label for="password_ok">تأكيد كلمة المرور </label>
+											<input type="password" id="password_ok" name="password_ok">
+										</div>
+									</div>
+								
 									<div class="col-12 text-start mt-3">
 										<button type="submit" class="thm-btn">حفظ</button>
 									</div>
@@ -333,7 +361,6 @@
 	<!-- template js -->
 	<script src="assets/js/custom.js"></script>
 	<script src="assets/js/regist-cutom.js"></script>
-	
 
 </body>
 

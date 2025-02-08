@@ -170,3 +170,11 @@ var inputs = document.querySelectorAll('.file-input')
 					label.innerText = value
 				}
 		}
+
+  /* dropdown-menu */
+  let profile = document.querySelector('.profile');
+  let menu = document.querySelector('.menu');
+
+  profile.onclick = function () {
+    menu.classList.toggle('active');
+  }
