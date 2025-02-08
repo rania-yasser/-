@@ -3743,7 +3743,7 @@ ul {
 
 .counter-one__bg {
   background-repeat: no-repeat;
-  background-position: top center;
+  background-position: center;
   background-color: var(--main-extra);
   background-blend-mode: luminosity;
   position: absolute;
@@ -3751,7 +3751,7 @@ ul {
   right: 0;
   left: 0;
   bottom: 0;
-  opacity: 0.06;
+  opacity: 0.09;
 }
 
 .counter-one .container {
@@ -3867,7 +3867,7 @@ ul {
   font-family: var(--main-font) !important;
   line-height: 50px !important;
   color: var(--main-primary);
-  font-weight: 400;
+  font-weight: 700;
 }
 
 .counter-one__plus {
