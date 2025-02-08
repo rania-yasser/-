@@ -656,3 +656,16 @@ button.thm-btn {
 .table_rate tbody td a{
   color: var(--main-primary);
 }
+.checkbox_select{
+  display: flex;
+  flex-wrap: wrap;
+}
+.checkbox_select .checked-box{
+  width: 50%;
+  margin-bottom: 5px;
+}
+@media(max-width:500px){
+  .checkbox_select .checked-box{
+    width: 100%;
+  }
+}

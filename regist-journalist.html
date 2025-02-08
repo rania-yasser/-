@@ -161,7 +161,7 @@
 									</div>
 									<div class="col-12 comment-form__input-box">
 										<label for="end">المهنة أو الدور الصحفي</label>
-										<select class="jop_select wide" name="" id="">
+										<select class="wide" name="" id="">
 											<option value="">--</option>
 											<option value="">مدير تحرير</option>
 											<option value="">كاتب</option>
@@ -195,15 +195,31 @@
 										</select>
 									</div>
 									<div class="col-12 comment-form__input-box">
-										<label for="end"> اختيار الخدمات المقدمة</label>
-										<select class="services_select wide" multiple="multiple">
-											<option value="">كتابة</option>
-											<option value="">تحرير</option>
-											<option value="">استشارات إعلامية</option>
-											<option value="">محتوي رقمي</option>
-											<option value="">مراجعة لغوية</option>
-										</select>
-										<small class="attention">ملحوظه : يمكنك إختيار أكثر من خدمة بحد أدني
+										<label for="end" class="mb-2"> اختيار الخدمات المقدمة</label>
+										<div class="checkbox_select">
+											<div class="checked-box">
+												<input type="checkbox" name="sevices" id="write">
+												<label for="write"><span></span>كتابة</label>
+											</div>
+											<div class="checked-box">
+												<input type="checkbox" name="sevices" id="edit">
+												<label for="edit"><span></span>تحرير</label>
+											</div>
+											<div class="checked-box">
+												<input type="checkbox" name="sevices" id="consulting">
+												<label for="consulting"><span></span>استشارات إعلامية</label>
+											</div>
+											<div class="checked-box">
+												<input type="checkbox" name="sevices" id="digital">
+												<label for="digital"><span></span>محتوي رقمي</label>
+											</div>
+											<div class="checked-box">
+												<input type="checkbox" name="sevices" id="revision">
+												<label for="revision"><span></span>مراجعة لغوية</label>
+											</div>
+										</div>
+										<small class="attention mt-2  d-block">ملحوظه : يمكنك إختيار أكثر من خدمة بحد
+											أدني
 											خدمة واحدة</small>
 									</div>
 									<div class="col-12">

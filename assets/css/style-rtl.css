@@ -8885,7 +8885,8 @@ ul {
 .comment-form__input-box label span{
   color: red;
 }
-.comment-form__input-box input {
+.comment-form__input-box input,
+.comment-form__input-box select {
   height: 45px;
   width: 100%;
   border: none;
@@ -12990,13 +12991,13 @@ body.boxed-wrapper {
   font-weight: 400;
 }
 
-.billing_details .checked-box {
+.checked-box {
   position: relative;
   display: block;
   margin-top: -4px;
 }
 
-.billing_details .checked-box label {
+.checked-box label {
   position: relative;
   display: inline-block;
   padding-right: 30px;
@@ -13011,11 +13012,11 @@ body.boxed-wrapper {
   font-family: var(--main-font);
 }
 
-.billing_details .checked-box input[type="checkbox"] {
+.checked-box input[type="checkbox"] {
   display: none;
 }
 
-.billing_details .checked-box input[type="checkbox"] + label span {
+.checked-box input[type="checkbox"] + label span {
   position: absolute;
   top: 2px;
   right: 0;
@@ -13023,8 +13024,8 @@ body.boxed-wrapper {
   height: 20px;
   border-radius: 50%;
   vertical-align: middle;
-  background-color: transparent;
-  background: var(--main-base);
+  background: var(--main-extra);
+  border: 1px solid #ddd !important;
   cursor: pointer;
   -webkit-transition: all 300ms ease;
   -moz-transition: all 300ms ease;
@@ -13034,34 +13035,30 @@ body.boxed-wrapper {
   border: 0;
 }
 
-.billing_details .checked-box label span:before {
+.checked-box label span:before {
   position: absolute;
   top: 4px;
   right: 6px;
   display: block;
-  border-bottom: 2px solid #ffffff;
-  border-left: 2px solid #ffffff;
+  border-bottom: 2px solid var(--main-base);
+  border-right: 2px solid var(--main-base);
   content: "";
   width: 6px;
   height: 9px;
   pointer-events: none;
-  -webkit-transform-origin: 34% 66%;
-  -ms-transform-origin: 34% 66%;
-  transform-origin: 34% 66%;
-  -webkit-transform: rotate(-45deg);
-  -ms-transform: rotate(-45deg);
-  transform: rotate(-45deg);
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
   -webkit-transition: all 0.15s ease-in-out;
   transition: all 0.15s ease-in-out;
   opacity: 0;
 }
 
-.billing_details.checked-box input[type="checkbox"]:checked + label span {
+.checked-box input[type="checkbox"]:checked + label span {
   border-color: #ffffff;
 }
 
-.billing_details
-  .checked-box
+.checked-box
   input[type="checkbox"]:checked
   + label
   span:before {
